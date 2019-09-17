@@ -1,3 +1,6 @@
+* {
+    font-family: Arial, serif;
+}
 nav {
     background: black;
     color: gray;
@@ -14,6 +17,9 @@ nav {
     width: 500px;
 
 }
+.num {
+    background: lightgrey;
+}
 .navul {
     list-style: none;
     display: flex;
@@ -25,7 +31,6 @@ section {
 }
 .top {
     display: flex;
-    font-family: Arial, serif;
     font-size: 3vh;
     padding: 8px;
 }
@@ -48,18 +53,21 @@ section {
     border-left: 1px solid gray;
     border-top: 1px solid gray;
     border-right: 1px solid gray;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+
 
 }
 #table {
     margin:auto;
     margin-top: 30px;
     width: 80%;
-    border: 2px solid gray;
+    border: 2px solid rgba(128, 128, 128, 0.46);
 }
 .one {
     background: rgba(237, 238, 242, 0.91);
     padding: 8px;
-    font-family: Arial, serif;
 }
 .two {
     padding: 8px;
@@ -75,7 +83,6 @@ section {
 .name {
     display: inline-block;
     list-style: none;
-    font-family: arial, serif;
     font-size: 1.5vh;
 }
 .n {
@@ -95,4 +102,27 @@ section {
 }
 .n1 {
     padding: 0;
+}
+
+.github {
+    color: grey;
+    display: inline-block;
+    margin-top: 10px;
+}
+ul.footer1 {
+    display: inline-flex;
+    width: 30%;
+    justify-content: space-evenly;
+    color: rebeccapurple;
+    list-style: none ;
+
+
+}
+.footer2 {
+    float: right;
+    display: inline-flex;
+    width: 30%;
+    justify-content: space-evenly;
+    color: rebeccapurple;
+    list-style: none ;
 }
