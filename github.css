@@ -1,0 +1,33 @@
+nav {
+    background: black;
+    color: gray;
+    display: flex;
+}
+#cat {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.nav {
+    width: 500px;
+}
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+section {
+    background: gray;
+
+}
+.top {
+    display: flex;
+    font-family: Arial, serif;
+    font-size: 3vh;
+}
+#logo {
+    height: 60px;
+    width: 60px;
+    margin-right: 10px;
+}
