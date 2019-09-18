@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./pdf.css">
+    <title>PDF Form</title>
+</head>
+<body>
+<div id="bodyWrapper">
+<nav>
+    <form method="POST" id="nav" name="received">
+        <label for="date">Received on</label>
+        <input type="text" id="date">
+        <label for="time">(date) at</label>
+        <input type="text" id="time">(time)
+    
+    </form>
+</nav>
+<header>
+    <img src="./img/avengers.jpg" alt="icon" id="aIcon">
+    <h5 id="caps">TEXAS ASSOCIATION OF REALTORS</h5>
+    <h3>RESIDENTIAL LEASE APPLICATION</h3>
+    <p id="pHead">USE OF THIS FORM BY PERSONS WHO ARE NOT MEMBERS OF THE TEXAS ASSOCIATION OF REALTORS IS NOT AUTHORIZED
+        .</p> <br>
+    <p class="italic"><i><b>
+        Each occupant and co-applicant 18 years or older must submit a separate application.
+    </b></i></p>
+</header>
+<main>
+    <form method="POST" id="mainForm"
+          action="http://request-inspector.glitch.me/"
+          accept-charset="UTF-8">
+        <section class="top">
+            <label for="propertyAddress">Property Address: </label>
+            <input type="text" id="propertyAddress">
+        </section>
+        <section class="tab">
+            <label for="MoveInDate">Move-in Date: </label>
+            <input type="text" id="MoveInDate" class="even">
+            <label for="monthlyRent">Monthly Rent: $</label>
+            <input type="number" id="monthlyRent" class="even">
+            <label for="securityDeposit">Security Deposit: </label>
+            <input type="text" id="securityDeposit" class="even">
+        </section>
+        <section class="top">
+            <label>
+                Applicant was referee to landlord by:
+                <label for="agent"> <br>
+                    Real estate agent
+                    <input name="referred" type="checkbox" value="realEstateAgent" id="agent">
+                    <input type="text" name="referred" id="name">(name)
+                    <input type="tel" name="referred" id="phone">(phone)
+                </label>
+         
+            </label>
+        </section>
+        <input type="submit" name="submit" id="s">
+    </form>
+</main>
+</div>
+</body>
+</html>

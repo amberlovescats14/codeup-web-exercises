@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial, serif;
+}
+#bodyWrapper {
+    width: 50%;
+    margin: auto;
+}
+input {
+    outline: 0;
+    border-width: 0 0 1px;
+    border-color: black;
+}
+input:focus {
+    border-color: blue
+}
+nav {
+    padding: 20px;
+}
+#nav {
+    display: flex;
+    float: right;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border-bottom: 3px solid black;
+    padding: 20px
+}
+#aIcon {
+    width: 30px;
+    height: 30px;
+}
+#caps {
+    font-weight: 400;
+    font-family: "Times New Roman", serif;
+}
+#pHead {
+    font-size: 1vh;
+}
+#mainForm {
+    display: flex;
+    flex-direction: column;
+}
+#propertyAddress {
+    width: 700px;
+}
+.top {
+    margin-top: 10px;
+}
+.tab {
+    margin-left: 70px
+}
+.even {
+     width: 17%
+ }
