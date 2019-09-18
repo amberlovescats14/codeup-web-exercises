@@ -75,7 +75,7 @@ section {
 }
 .avatarME {
     height: 6vh;
-    width: vw;
+    width: 6vw;
     padding: 5px;
     display: inline-block;
 
@@ -115,6 +115,7 @@ ul.footer1 {
     justify-content: space-evenly;
     color: rebeccapurple;
     list-style: none ;
+    font-size: 2vh;
 
 
 }
