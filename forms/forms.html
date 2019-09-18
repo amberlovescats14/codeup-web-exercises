@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./forms.css">
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Register With Us!</h1>
+    <form method="POST"
+          action="https://request-inspector.glitch.me/">
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email" placeholder="example@gmail.com">
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" placeholder="******">
+
+        <label for="bio">Personal Biography:</label>
+        <textarea name="bio" id="bio" cols="30" rows="10"
+                  placeholder="tell us about yourself..."></textarea>
+
+        <label>
+            How did you hear about us?
+            <label>
+            <input type="radio" name="advertisement" value="Billboard">
+                Billboard
+            </label>
+            <label>
+                <input type="radio" name="advertisement" value="Radio Advertisement">
+                Radio Advertisement
+            </label>
+            <label>
+                <input type="radio" name="advertisement" value="Internet Advertisement">
+                Internet Advertisement
+            </label>
+            <label>
+                <input type="radio" name="advertisement" value="Other">
+                Other
+            </label>
+        </label>
+
+
+    </form>
+</body>
+</html>
