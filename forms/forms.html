@@ -25,26 +25,57 @@
         <label for="bio">Personal Biography:</label>
         <textarea name="bio" id="bio" cols="30" rows="10"
                   placeholder="tell us about yourself..."></textarea>
-
+<!--        // RADIO-->
         <label>
             How did you hear about us?
-            <label>
-            <input type="radio" name="advertisement" value="Billboard">
+            <label for="Billboard">
+            <input type="radio" name="advertisement" value="Billboard" id="Billboard">
                 Billboard
             </label>
-            <label>
-                <input type="radio" name="advertisement" value="Radio Advertisement">
+            <label for="radio">
+                <input type="radio" name="advertisement"
+                       id="radio" value="Radio Advertisement">
                 Radio Advertisement
             </label>
-            <label>
-                <input type="radio" name="advertisement" value="Internet Advertisement">
+            <label for="internet">
+                <input type="radio" name="advertisement"
+                       id="internet" value="Internet Advertisement">
                 Internet Advertisement
             </label>
-            <label>
-                <input type="radio" name="advertisement" value="Other">
+            <label for="other">
+                <input type="radio" name="advertisement"
+                       id="other" value="Other">
                 Other
             </label>
         </label>
+<!--        CheckBox-->
+        <label>
+            What is your favorite color?
+                * multiple may be selected:
+            <label for="red">
+            <input type="checkbox" name="color" value="red" id="red">
+            </label>
+            <label for="orange">
+                <input type="checkbox" name="color" value="orange" id="orange">
+            </label>
+            <label for="yellow">
+                <input type="checkbox" name="color" value="yellow" id="yellow">
+            </label>
+            <label for="blue">
+                <input type="checkbox" name="color" value="blue" id="blue">
+            </label>
+        </label>
+
+        <label for="web">What is your favorite browser?</label>
+        <select name="web" id="web">
+            <option value="chrome" selected>Chrome</option>
+            <option value="IE">Internet Explorer</option>
+            <option value="FF">Fire Fox</option>
+            <option value="VPN">Virtual Private Network</option>
+        </select>
+
+        <input type="submit">
+        
 
 
     </form>
