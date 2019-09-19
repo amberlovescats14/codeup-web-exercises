@@ -48,15 +48,60 @@
                 <label for="agent"> <br>
                     Real estate agent
                     <input name="referred" type="checkbox" value="realEstateAgent" id="agent">
-                    <input type="text" name="referred" id="name">(name)
-                    <input type="tel" name="referred" id="phone">(phone)
                 </label>
-         
+                <input type="text" name="referred" id="name">
+                <label for="name">(name)</label>
+                <input type="tel" name="referred" id="phone">
+                <label for="phone">(phone)</label>  <br>
+                <label>
+                    <input type="checkbox" name="referred" value="newspaper">
+                    Newspaper
+                </label>
+                <label>
+                    <input type="checkbox" name="referred" value="sign">
+                    Sign
+                </label>
+                <label>
+                    <input type="checkbox" name="referred" value="internet">
+                    Internet
+                </label>
+                <label>
+                    <input type="checkbox" name="referred" value="other">
+                    Other
+                    <input type="text" name="referred" id>
+                </label>
             </label>
+            <section class="top">
+                <label for="applicantsName">
+                    Applicant's name (first, middle, last)
+                    <input type="text" id="applicantsName" name="applicantsName">
+                </label>
+                <label class="tab" id="tab">
+                    Is there a co-applicant?
+                    <label for="true">
+                    <input type="checkbox" id="true" name="coApplicant" value="true">
+                        yes
+                    </label>
+                    <label for="false">
+                        <input type="checkbox" id="false" name="coApplicant" value="false">
+                        no
+                    </label>
+                    
+                </label>
+                    <span class="disclosure">
+                            If yes, co-applicant must submit a separate application.
+                    </span> <br>
+                <label for="formerLastName">
+                    Applicants former last name (maiden or married)
+                    <input type="text" id="formerLastName" name="formerLastName">
+                </label>
+            </section>
         </section>
         <input type="submit" name="submit" id="s">
     </form>
 </main>
 </div>
+
+
 </body>
 </html>

@@ -3,9 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: arial, serif;
+    font-size: small;
+
 }
 #bodyWrapper {
-    width: 50%;
+    width: 70%;
     margin: auto;
 }
 input {
@@ -14,7 +16,7 @@ input {
     border-color: black;
 }
 input:focus {
-    border-color: blue
+    border-color: blue;
 }
 nav {
     padding: 20px;
@@ -29,7 +31,7 @@ header {
     text-align: center;
     align-items: center;
     border-bottom: 3px solid black;
-    padding: 20px
+    padding: 20px;
 }
 #aIcon {
     width: 30px;
@@ -47,14 +49,41 @@ header {
     flex-direction: column;
 }
 #propertyAddress {
-    width: 700px;
+    width: 80%;
 }
 .top {
     margin-top: 10px;
 }
 .tab {
-    margin-left: 70px
+    margin-left: 10%;
 }
 .even {
-     width: 17%
+     width: 15%;
  }
+#name {
+    width: 39%;
+}
+#applicantsName {
+    width: 65%;
+}
+.disclosure {
+    font-size: 9px;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 0;
+    margin-left: 30px;
+
+}
+#formerLastName {
+    width: 52%
+}
+
+
+
+
+
+
+
+#s {
+    border: 2px solid yellow;
+}
