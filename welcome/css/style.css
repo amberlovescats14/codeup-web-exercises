@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+/*font-family: 'Open Sans', sans-serif;*/
+* {
+    color: grey;
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    /*background: #808080;*/
+    background-image: url("./sun-pattern.png");
+}
+nav {
+    background: #CADBC8;
+    text-align: center;
+}
+
+.fancy-header {
+    color: #5a6062; /* single line comment */
+    text-decoration: underline;
+    text-align: center;
+}
+h2 {
+    color: #7d877b;
+    text-decoration: underline;
+}
+#top2 {
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid;
+    padding: 40px
+
+}
+#middle {
+    text-align: center;
+}
+#middleWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+}
+ul {
+    list-style: square outside none;
+
+}
+#bottom {
+    text-align: center;
+}
+table {
+    font-size: 2em;
+    margin: auto;
+}
+tr {
+    border: 2px solid #E2D4B7;
+}
+td {
+    padding: 10px;
+    border: 2px solid #E2D4B7;
+    background: rgba(255, 244, 213, 0.6);
+    color: #968d79
+}
+th {
+    font-weight: 800;
+}
+a:hover {
+    color: yellow;
+}
