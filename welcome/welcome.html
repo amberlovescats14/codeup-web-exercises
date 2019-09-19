@@ -10,11 +10,13 @@
 <body>
 <div id="top1"></div>
 <nav>
+    <div id="navWrapper">
     <h1 class="fancy-header"
     >Welcome to Venetian Dynamics</h1>
-    <p>At Venetian Dynamics, <b>we</b> solve your problems with
+    <p id="p">At Venetian Dynamics, <b>we</b> solve your problems with
         <b><i>technology.</i></b></p>
     <hr>
+    </div>
 </nav>
 <div id="top2">
     <div class="wrapUL">
@@ -89,6 +91,48 @@
     </div>
     <div>
         <p><i>All products come with our quality guarantee. &trade;</i></p>
+    </div>
+</div>
+<div id="veryBottom">
+    <div id="veryBottomWrapper">
+        <form method="POST" id="form"
+              action="http://request-inspector.glitch.me/"
+              accept-charset="UTF-8">
+            <h2>Come Stay With Us!</h2>
+            <label for="destination" class="label">
+                Destination
+            </label>
+            <input type="text" name="destination"
+            id="destination">
+            <label for="date" class="label">
+                Date: <input type="date" name="date" id="date">
+            </label>
+            <label for="contact" class="label">
+                Best way to contact you?
+            </label>
+            <select name="contactMethod" id="contact">
+                <option class="option" value="phones">Phone</option>
+                <option class="option" value="email">Email</option>
+                <option class="option" value="mail">Mail</option>
+            </select>
+            <label for="contactInfo" class="label">
+                Appropriate Contact Info: 
+            </label>
+            <input type="text" id="contactInfo" name="contactInfo">
+            <label class="label">
+                Sign up for emails
+                <label for="yes">
+                    <input type="checkbox" name="emails" id="yes" checked>
+                    yes.
+                </label>
+                <label for="no">
+                    <input type="checkbox" name="emails" id="no">
+                    no
+                </label>
+            </label>
+       
+            <button type="submit">Submit</button>
+        </form>
     </div>
 </div>
 <footer>
