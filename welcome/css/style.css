@@ -9,6 +9,11 @@ body {
     /*background: #808080;*/
     background-image: url("./sun-pattern.png");
 }
+.i {
+    width: 300px;
+    height: 300px;
+
+}
 nav {
     height: 30vh;
     width: 100%;
@@ -116,26 +121,32 @@ a:hover, a:visited, a:active {
 input {
     font-size: 2vh;
 }
-.sub {
-    border: 2px solid green;
-    padding: 10px;
+.t {
+   width: 20vw
 
+}
+.select {
+    font-size: 2vh;
 }
 #s{
     position: relative;
-    display: inline-block;
     border: none;
     border-radius: 4px;
     padding: 0 16px;
-    min-width: 94px;
-    height: 36px;
+    min-width: 140px;
+    height: 46px;
     vertical-align: middle;
     text-align: center;
-    background: #CADBC8;
+    background: rgb(196, 213, 195);
     color: white;
-    margin: auto
-
-
+    font-weight: 900;
+    font-size: 2vh;
+    margin-left: 29px;
+}
+#s:hover {
+    -webkit-box-shadow: 0 7px 4px #777;
+    -moz-box-shadow: 0 7px 4px #777;
+    box-shadow: 0 7px 4px #777;
 }
 
 
