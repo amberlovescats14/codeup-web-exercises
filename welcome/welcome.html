@@ -95,18 +95,24 @@
 </div>
 <div id="veryBottom">
     <div id="veryBottomWrapper">
+        <h2 id="formHead">Come Stay With Us!</h2>
+    
         <form method="POST" id="form"
               action="http://request-inspector.glitch.me/"
               accept-charset="UTF-8">
-            <h2>Come Stay With Us!</h2>
+            <span class="s">
             <label for="destination" class="label">
                 Destination
             </label>
             <input type="text" name="destination"
             id="destination">
+                </span>
+            <span class="s">
             <label for="date" class="label">
                 Date: <input type="date" name="date" id="date">
             </label>
+                </span>
+            <span class="s">
             <label for="contact" class="label">
                 Best way to contact you?
             </label>
@@ -115,10 +121,14 @@
                 <option class="option" value="email">Email</option>
                 <option class="option" value="mail">Mail</option>
             </select>
+                </span>
+            <span class="s">
             <label for="contactInfo" class="label">
                 Appropriate Contact Info: 
             </label>
             <input type="text" id="contactInfo" name="contactInfo">
+                </span>
+            <span class="s">
             <label class="label">
                 Sign up for emails
                 <label for="yes">
@@ -130,8 +140,10 @@
                     no
                 </label>
             </label>
-       
-            <button type="submit">Submit</button>
+                </span>
+            <span class="sub">
+            <button type="submit" id="s">Submit</button>
+            </span>
         </form>
     </div>
 </div>
