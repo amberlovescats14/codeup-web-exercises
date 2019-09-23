@@ -1,129 +1,129 @@
 * {
-    font-family: Arial, serif;
+  font-family: Arial, serif;
 }
 nav {
-    background: black;
-    color: gray;
-    display: flex;
-    padding: 20px
+  background: black;
+  color: gray;
+  display: flex;
+  padding: 20px
 }
 #cat {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    margin-left: 10px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-left: 10px;
 }
 .nav {
-    width: 500px;
+  width: 500px;
 
 }
 .num {
-    background: lightgrey;
+  background: lightgrey;
 }
 .navul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
 section {
-    background: rgba(237, 238, 242, 0.91);
+  background: rgba(237, 238, 242, 0.91);
 
 }
 .top {
-    display: flex;
-    font-size: 3vh;
-    padding: 8px;
+  display: flex;
+  font-size: 3vh;
+  padding: 8px;
 }
 #logo {
-    height: 60px;
-    width: 60px;
-    margin-right: 10px;
+  height: 60px;
+  width: 60px;
+  margin-right: 10px;
 }
 .underCodeup {
-    width: 60%;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    color: #787878
+  width: 60%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  color: #787878
 }
 .underCodeup li:nth-child(2) {
-    background: white;
-    color: black;
-    font-weight: 700;
-    border-left: 1px solid gray;
-    border-top: 1px solid gray;
-    border-right: 1px solid gray;
-    padding-left: 5px;
-    padding-top: 5px;
-    padding-right: 5px;
+  background: white;
+  color: black;
+  font-weight: 700;
+  border-left: 1px solid gray;
+  border-top: 1px solid gray;
+  border-right: 1px solid gray;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-right: 5px;
 
 
 }
 #table {
-    margin:auto;
-    margin-top: 30px;
-    width: 80%;
-    border: 2px solid rgba(128, 128, 128, 0.46);
+  margin:auto;
+  margin-top: 30px;
+  width: 80%;
+  border: 2px solid rgba(128, 128, 128, 0.46);
 }
 .one {
-    background: rgba(237, 238, 242, 0.91);
-    padding: 8px;
+  background: rgba(237, 238, 242, 0.91);
+  padding: 8px;
 }
 .two {
-    padding: 8px;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+  padding: 8px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
 }
 .avatarME {
-    height: 6vh;
-    width: 6vw;
-    padding: 5px;
-    display: inline-block;
+  height: 6vh;
+  width: 6vw;
+  padding: 5px;
+  display: inline-block;
 
 }
 .name {
-    display: inline-block;
-    list-style: none;
-    font-size: 1.5vh;
+  display: inline-block;
+  list-style: none;
+  font-size: 1.5vh;
 }
 .n {
-    color: rebeccapurple;
-    font-weight: 700;
-    font-size: 2vh;
-    margin-bottom: 8px;
+  color: rebeccapurple;
+  font-weight: 700;
+  font-size: 2vh;
+  margin-bottom: 8px;
 }
 .ulOne {
-    display: inline-flex;
-    float: right;
-    justify-content: space-evenly;
-    list-style: none;
-    width: 20%;
+  display: inline-flex;
+  float: right;
+  justify-content: space-evenly;
+  list-style: none;
+  width: 20%;
 
 
 }
 .n1 {
-    padding: 0;
+  padding: 0;
 }
 
 .github {
-    color: grey;
-    display: inline-block;
-    margin-top: 10px;
+  color: grey;
+  display: inline-block;
+  margin-top: 10px;
 }
 ul.footer1 {
-    display: inline-flex;
-    width: 30%;
-    justify-content: space-evenly;
-    color: rebeccapurple;
-    list-style: none ;
-    font-size: 2vh;
+  display: inline-flex;
+  width: 30%;
+  justify-content: space-evenly;
+  color: rebeccapurple;
+  list-style: none ;
+  font-size: 2vh;
 
 
 }
 .footer2 {
-    float: right;
-    display: inline-flex;
-    width: 30%;
-    justify-content: space-evenly;
-    color: rebeccapurple;
-    list-style: none ;
+  float: right;
+  display: inline-flex;
+  width: 30%;
+  justify-content: space-evenly;
+  color: rebeccapurple;
+  list-style: none ;
 }
