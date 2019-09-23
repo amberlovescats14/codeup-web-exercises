@@ -4,6 +4,12 @@
   box-sizing: border-box;
   font-family: Arial;
 }
+:root {
+  --info: rgba(30, 144, 255, 0.71);
+  --success: rgba(72, 179, 123, 0.6);
+  --warning: rgba(255, 255, 0, 0.62);
+  --error: rgba(213, 41, 41, 0.53)
+}
 body{
   padding: 30px;
 }
@@ -14,18 +20,18 @@ body{
   margin: 8px;
 }
 .message-info {
-  background: rgba(30, 144, 255, 0.71);
+  background: var(--success);
   color: darkblue;
 }
 .message-success {
-  background: rgba(72, 179, 123, 0.6);
+  background: var(--success) ;
   color: #003600;
 }
 .message-warning {
-  background: rgba(255, 255, 0, 0.62);
+  background: var(--warning);
   color: #a79a39;
 }
 .message-error {
-  background: rgba(213, 41, 41, 0.53);
+  background: var(--error);
   color: #a20000;
 }
