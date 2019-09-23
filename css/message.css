@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+body{
+  padding: 30px;
+}
+.message {
+  border: 2px solid lightgrey;
+  border-radius: 12px;
+  padding: 10px;
+  margin: 8px;
+}
+.message-info {
+  background: rgba(30, 144, 255, 0.71);
+  color: darkblue;
+}
+.message-success {
+  background: rgba(72, 179, 123, 0.6);
+  color: #003600;
+}
+.message-warning {
+  background: rgba(255, 255, 0, 0.62);
+  color: #a79a39;
+}
+.message-error {
+  background: rgba(213, 41, 41, 0.53);
+  color: #a20000;
+}
