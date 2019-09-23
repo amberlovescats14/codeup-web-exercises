@@ -9,3 +9,6 @@ const findAreaOfTriangle =( a, b, c) => {
     return Math.sqrt(p*(p-a)*(p-b)*(p-c))
 }
 console.log(findAreaOfTriangle(5,6,7));
+
+const sayHi = () => 'Hi'
+console.log(sayHi());

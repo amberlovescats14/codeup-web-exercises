@@ -7,7 +7,7 @@
 }
 body {
     /*background: #808080;*/
-    background-image: url("./sun-pattern.png");
+    background-image: url("sun-pattern.png");
 }
 .i {
     width: 300px;
@@ -17,7 +17,7 @@ body {
 nav {
     height: 30vh;
     width: 100%;
-    background-image: url("./photo-1558841710-2765c350df10.jpeg");
+    background-image: url("photo-1558841710-2765c350df10.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
