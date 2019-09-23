@@ -61,7 +61,11 @@ a {
 
 .profile-image {
   position: absolute;
-  top: -30px;
+  top: -25px;
+}
+.me {
+  height: 120px;
+  width: 120px
 }
 .profile-form {
   float: right;
