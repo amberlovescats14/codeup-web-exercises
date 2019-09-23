@@ -20,7 +20,7 @@ body{
   margin: 8px;
 }
 .message-info {
-  background: var(--success);
+  background: var(--info);
   color: darkblue;
 }
 .message-success {
