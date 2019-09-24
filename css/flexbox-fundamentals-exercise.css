@@ -19,14 +19,6 @@ h2, h3 {
     width: 80%;
 }
 
-.green-box {
-    background: green;
-    height: 1em;
-    width: 2em;
-}
-.green-box:nth-child(4) {
-    align-self: flex-start;
-}
 
 .border {border: 2px solid black;}
 
@@ -46,6 +38,15 @@ section {
     justify-content: space-between;
     align-items: center;
 }
+.green-box {
+    background: green;
+    height: 1em;
+    width: 2em;
+}
+.green-box:nth-child(4) {
+    align-self: flex-start;
+}
+
 
 section:nth-of-type(1) {
     height: 3em;
