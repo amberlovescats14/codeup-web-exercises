@@ -13,5 +13,5 @@ console.log(findAreaOfTriangle(5,6,7));
 const sayHi = () => 'Hi'
 console.log(sayHi());
 
-const helloName = name => `Hello ${name}`
+const helloName = name => `Hello ${name}.`
 console.log(helloName('Amber'))

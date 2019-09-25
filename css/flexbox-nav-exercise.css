@@ -2,7 +2,6 @@
   margin:0;
   padding: 0;
   box-sizing: border-box;
-  color: black;
   font-family: Arial, serif;
 }
 nav {
@@ -10,15 +9,35 @@ nav {
   justify-content: space-between;;
 }
 .item {
-  flex: 1;
+  flex-basis: 400px;
   display: flex;
 }
+.item1 { flex: 1 1 10em}
+.item2 { flex: 3 3 30em }
+.item3 { flex: 1 1 10em}
+
+#logo {
+  margin: auto;
+}
+
 ul {
+  display: flex;
   list-style: none;
 }
+
 li {
   padding: 10px;
 }
+.rightUL {
+  float: right;
+  margin-left: auto;
+}
 a {
   text-decoration: none;
+  display: inline-block;
+  color: black;
+
+}
+a:hover {
+  color: blue;
 }
