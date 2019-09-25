@@ -1,44 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Work+Sans&display=swap');
+
+/*font-family: 'Montserrat', sans-serif;*/
+/*font-family: 'Work Sans', sans-serif;*/
+
 *, *:after, *:before {
   margin:0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, serif;
 }
 nav {
+  font-family: 'Work Sans', sans-serif;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   background: #cdcdcd;
+  position: relative;
 }
 .item {
-  flex-basis: 400px;
   display: flex;
+  align-items: center;
+  font-family: 'Work Sans', sans-serif;
+  border: 2px solid;
+  height: 100px
+
 }
-.item1 { flex: 1 1 10em}
-.item2 { flex: 3 3 30em }
-.item3 { flex: 1 1 10em}
+.item1 { flex: 1 1 20%}
+.item2 {
+  flex:3 3 60%;
+  display: flex;
+  justify-content: center;
+  font-size: 3em;
+  font-family: 'Montserrat', sans-serif;
+}
+.item3 { flex: 1 1 20%}
 
 #logo {
-  margin: auto;
-}
+  position: absolute;
+  border: 2px solid;
+  padding: .2em 0;
 
-ul {
-  display: flex;
-  list-style: none;
 }
-
-li {
-  padding: 10px;
-}
-.rightUL {
-  float: right;
+.iconWrapper {
   margin-left: auto;
 }
 a {
   text-decoration: none;
-  display: inline-block;
   color: black;
+  padding: 10px;
 
 }
 a:hover {
   color: blue;
+  background: blue;
 }
