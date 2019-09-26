@@ -43,7 +43,7 @@ body {
 #six {
   background: white;
   color: black;
-  grid-area: 5 / 1 / span 2 / span 1;
+  grid-area: 5 / 1 / span 3 / span 1;
 }
 #seven {
   background: yellow;

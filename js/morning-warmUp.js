@@ -15,3 +15,6 @@ console.log(sayHi());
 
 const helloName = name => `Hello ${name}.`
 console.log(helloName('Amber'))
+
+const returnFirstElement = arr => arr[0];
+console.log(returnFirstElement([1,2,3,4,5]))
