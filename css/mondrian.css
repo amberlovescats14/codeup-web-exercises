@@ -32,6 +32,7 @@ body {
 }
 #three {
   background: yellow;
+  color: black;
   grid-area: 3 /1 / span 4 / span 1
 }
 #four {
@@ -51,6 +52,7 @@ body {
 }
 #seven {
   background: yellow;
+  color: black;
   grid-area: 7 / 3 / span 3 / -1
 }
 #eight {
