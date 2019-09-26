@@ -1,0 +1,36 @@
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #efefef;
+  color: #444
+}
+#grid-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+          "header header header header"
+          "nav article article ads"
+          "nav article article ads"
+          "nav footer footer footer"   ;
+  grid-gap: 1em;
+}
+.item {
+  background: #ffa4f9;
+}
+.header {
+  grid-area: header;
+}
+.nav {
+  grid-area: nav;
+}
+.article {
+  grid-area: article;
+}
+.ads {
+  grid-area: ads;
+}
+.footer {
+  grid-area: footer;
+}
