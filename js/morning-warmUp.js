@@ -1,6 +1,6 @@
 //  node js/morning-warmUp.js
 
-//FIXME: custom comments
+//FIXME: fixme and todo comments are green by default
 //a: This comment is red
 //b: This comment is blue
 //c: This comment is pink
