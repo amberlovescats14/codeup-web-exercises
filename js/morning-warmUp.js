@@ -1,5 +1,11 @@
 //  node js/morning-warmUp.js
 
+//FIXME: custom comments
+//a: This comment is red
+//b: This comment is blue
+//c: This comment is pink
+
+
 const func = (a, b) => a + b;
 func(1,2);
 
@@ -18,3 +24,13 @@ console.log(helloName('Amber'))
 
 const returnFirstElement = arr => arr[0];
 console.log(returnFirstElement([1,2,3,4,5]))
+
+const areaOfEquilateralTriangle = num => {
+    return (Math.sqrt(3) / 4 ) * (num ** 2)
+}
+//d:  OR
+const areaOfEquilateralTriangle = num => {
+    return findAreaOfTriangle(num, num, num);
+}
+
+console.log(areaOfEquilateralTriangle())
