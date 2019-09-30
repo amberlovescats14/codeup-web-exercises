@@ -59,3 +59,56 @@ footer > p {
   font-size: 1.4vh;
 }
 
+@media screen and (min-width: 768px) {
+
+  .hidden-on-desktop {
+    display: none;
+  }
+  nav, h1 {
+   width: 49%;
+   display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    padding: 0;
+    margin: 0;
+ }
+  h1 {
+    justify-content: flex-start;
+  }
+  nav {
+    justify-content: flex-end;
+  }
+  nav > ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+
+  }
+  .nav-links > li, a, a:visited, a:active {
+    background: none;
+    color: blue
+  }
+  img {
+    height: 50vh;
+    padding: 0;
+    margin: 0;
+  }
+  section {
+    height : 40vh;
+    padding: 0;
+    margin: 5vh 0 10vh 0;
+    vertical-align: top;
+  }
+  section:nth-of-type(1) {
+    display: inline-block;
+    width: 60%;
+  }
+  section:nth-of-type(2){
+    display: inline-block;
+    width: calc(100% - 71%);
+    margin-left: 8%;
+  }
+
+
+}
