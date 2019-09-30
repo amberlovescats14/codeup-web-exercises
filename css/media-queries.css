@@ -2,11 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: arial;
 
 }
 body {
-  padding: 5%
+  padding: 5%;
+  font-family: arial, serif;
+
 }
 li {
   list-style: none;
@@ -54,9 +55,20 @@ section > h2 {
 footer {
   padding: 10px;
   color: #A8B3BE;
+  display: flex;
+  justify-content: space-between;
 }
 footer > p {
   font-size: 1.4vh;
+}
+#social-media-links {
+  display: flex;
+  justify-content: space-evenly;
+  float: right;
+  width: 15vw;
+}
+a > i {
+  color: #A8B3BE;
 }
 
 @media screen and (min-width: 768px) {
@@ -109,6 +121,4 @@ footer > p {
     width: calc(100% - 71%);
     margin-left: 8%;
   }
-
-
 }
