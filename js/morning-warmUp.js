@@ -38,3 +38,6 @@ console.log(areaOfEquilateralTriangle(3))
 
 const concatenates = (a,b,c) => `${a} ${b} ${c}`
 console.log(concatenates("Hello", "Deimos", "Class"))
+
+const upperCase = str => str.toUpperCase()
+console.log(upperCase('granola bar'))
