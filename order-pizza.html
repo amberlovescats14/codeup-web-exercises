@@ -90,7 +90,7 @@
                             shadow">
                         Hand Tossed
                     </div>
-                    <div class="card-body">
+                    <div class="card-body p-0 shadow mb-4">
             
                         
                             <ul class="list-group">
@@ -99,7 +99,8 @@
                                 </li>
                                 <li class="list-group-item">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="handTossed10Inch"
+                                        <input class="form-check-input" type="radio" value="handTossed-10Inch"
+                                               name="sizeAndCrust"
                                                id="handTossed10Inch"
                                                value="handTossed10Inch" checked>
                                         <label class="form-check-label" for="handTossed10Inch">
@@ -109,9 +110,8 @@
                                 </li>
                                 <li class="list-group-item">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="handTossed12Inch"
-                                               id="handTossed12Inch"
-                                               value="handTossed12Inch" >
+                                        <input class="form-check-input" type="radio" name="sizeAndCrust"
+                                               id="handTossed12Inch" value="handTossed-12Inch" >
                                         <label class="form-check-label" for="handTossed12Inch">
                                             Medium (12")
                                         </label>
@@ -124,18 +124,19 @@
 
         
                     <div class="card-header bg-light shadow text-dak">Crispy Thin</div>
-                    <div class="card-body">
+                    <div class="card-body  p-0 shadow mb-4">
         
         
-                        <ul class="list-group">
+                        <ul class="list-group ">
                             <li class="list-group-item">
                                 Thin enough for optimum crispy to crunchy ratio.
                             </li>
                             <li class="list-group-item">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="thinCrust12Inch"
+                                    <input class="form-check-input"       type="radio"
+                                           name="sizeAndCrust"
                                            id="thinCrust12Inch"
-                                           value="thinCrust12Inch" >
+                                           value="thinCrust-12Inch" >
                                     <label class="form-check-label" for="thinCrust12Inch">
                                         Medium (12")
                                     </label>
@@ -143,9 +144,10 @@
                             </li>
                             <li class="list-group-item">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="thinCrust14Inch"
+                                    <input class="form-check-input"       type="radio"
+                                           name="sizeAndCrust"
                                            id="thinCrust14Inch"
-                                           value="thinCrust14Inch" >
+                                           value="thinCrust-14Inch" >
                                     <label class="form-check-label" for="thinCrust14Inch">
                                         Large (14")
                                     </label>
@@ -162,88 +164,69 @@
             </form>
         </div>
 <!--        end tab1-->
-
-<!--        start tab 2-->
-        
         <div role="tabpanel" class="tab-pane"
              id="tab2">
+            <div class="card-header bg-primary shadow text-white font-weight-bold ">
+                Choose Cheese and Sauce
+            </div>
             <form action="#">
-                <div class="card ">
-                    <div class="card-header bg-primary shadow text-white font-weight-bold">Choose Cheese and Sauce</div>
-                    <!--                nested card1-->
-                    <div class="card p-4 ">
-                        <div class="card-header bg-light text-dark
-                            shadow">
-                            Cheese
-                        </div>
-                        <div class="card-body border rounded mb-4">
-                            <div class="form-group ">
-                                <label for="howMuchCheese">How much?</label>
-                                <select class="form-control" id="howMuchCheese" name="howMuchCheese">
-                                    <option value="regular">Regular</option>
-                                    <option value="light">Light</option>
-                                    <option value="normal">Normal</option>
-                                    <option value="extra">Extra</option>
-                                    <option value="double">Double</option>
-                                </select>
-                            </div>
-
-                
-                        </div>
-                        <!--        nested card 2-->
-                
-                
-                        <div class="card-header bg-light shadow text-dak ">Sauce</div>
-                        <div class="card-body border rounded">
-    
-                            <div class="form-group m-0">
-                                <label for="howMuchCheese">
-                                    What Type?</label>
-                                <select class="form-control" id="typeOfSauce" name="typeOfSauce">
-                                    <option value="robust">
-                                        Robust Inspired Tomato
-                                    </option>
-                                    <option value="tomato">
-                                        Tomato Sauce
-                                    </option>
-                                    <option value="marinara">
-                                        Marinara Sauce
-                                    </option>
-                                    <option value="bbq">
-                                        BBQ Sauce
-                                    </option>
-                                    <option value="alfredo">
-                                        Alfredo Sauce
-                                    </option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="card-body border rounded">
-        
-                            <div class="form-group m-0">
-                                <label for="howMuchSauce">
-                                    How much?</label>
-                                <select class="form-control" id="howMuchSauce" name="howMuchSauce">
-                                    <option value="light">
-                                        Light
-                                    </option>
-                                    <option value="Normal">
-                                        Normal
-                                    </option>
-                                    <option value="extra">
-                                        Extra
-                                    </option>
-                                </select>
-                            </div>
-                        </div>
-
+                <div class="card  m-4 border rounded shadow">
+                    <div class="card-header ">
+                        Cheese
                     </div>
-        
-        
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="cheeseAmount">How Much?</label>
+                            <select class="form-control" id="cheeseAmount"
+                             name="cheeseAmount">
+                                <option value="regular">Regular</option>
+                                <option value="light">Light</option>
+                                <option value="normal">Normal</option>
+                                <option value="extra">Extra</option>
+                                <option value="double">Double</option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-header"></div>
+                <div class="card mx-4 shadow">
+                <div class="card  border shadow ">
+                    <div class="card-header">
+                        Sauce
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                                    <label for="typeOfSauce">What Type?</label>
+                                    <select class="form-control" id="typeOfSauce" name="typeOfSauce">
+                                        <option value="robust">Robust Inspired Tomato Sauce</option>
+                                        <option value="tomato">Tomato Sauce</option>
+                                        <option value="marinara">Marinara Sauce</option>
+                                        <option value="bbq">BBQ Sauce</option>
+                                        <option value="alfredo">Alfredo Sauce</option>
+                                    </select>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card  border">
+   
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="typeOfSauce">What Type?</label>
+                            <select class="form-control" id="typeOfSauce" name="typeOfSauce">
+                                <option value="robust">Robust Inspired Tomato Sauce</option>
+                                <option value="tomato">Tomato Sauce</option>
+                                <option value="marinara">Marinara Sauce</option>
+                                <option value="bbq">BBQ Sauce</option>
+                                <option value="alfredo">Alfredo Sauce</option>
+                            </select>
+            
+                        </div>
+                    </div>
+                </div>
+                </div>
             </form>
         </div>
+
         <div role="tabpanel" class="tab-pane"
              id="tab3">
             <form action="#">
