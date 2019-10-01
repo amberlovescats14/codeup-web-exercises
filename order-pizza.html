@@ -83,10 +83,11 @@
         id="tab1">
             <form action="#">
             <div class="card ">
-                <div class="card-header bg-primary text-white">Header</div>
+                <div class="card-header bg-primary shadow text-white font-weight-bold">Choose Size and Crust</div>
 <!--                nested card1-->
                 <div class="card p-4">
-                    <div class="card-header bg-light text-dark">
+                    <div class="card-header bg-light text-dark
+                            shadow">
                         Hand Tossed
                     </div>
                     <div class="card-body">
@@ -122,7 +123,7 @@
 <!--        nested card 2-->
 
         
-                    <div class="card-header bg-light text-dak">Crispy Thin</div>
+                    <div class="card-header bg-light shadow text-dak">Crispy Thin</div>
                     <div class="card-body">
         
         
@@ -161,26 +162,188 @@
             </form>
         </div>
 <!--        end tab1-->
-        
-        
-        
-        
+
+<!--        start tab 2-->
         
         <div role="tabpanel" class="tab-pane"
              id="tab2">
-            TAB TWO
+            <form action="#">
+                <div class="card ">
+                    <div class="card-header bg-primary shadow text-white font-weight-bold">Choose Cheese and Sauce</div>
+                    <!--                nested card1-->
+                    <div class="card p-4 ">
+                        <div class="card-header bg-light text-dark
+                            shadow">
+                            Cheese
+                        </div>
+                        <div class="card-body border rounded mb-4">
+                            <div class="form-group ">
+                                <label for="howMuchCheese">How much?</label>
+                                <select class="form-control" id="howMuchCheese" name="howMuchCheese">
+                                    <option value="regular">Regular</option>
+                                    <option value="light">Light</option>
+                                    <option value="normal">Normal</option>
+                                    <option value="extra">Extra</option>
+                                    <option value="double">Double</option>
+                                </select>
+                            </div>
+
+                
+                        </div>
+                        <!--        nested card 2-->
+                
+                
+                        <div class="card-header bg-light shadow text-dak ">Sauce</div>
+                        <div class="card-body border rounded">
+    
+                            <div class="form-group m-0">
+                                <label for="howMuchCheese">
+                                    What Type?</label>
+                                <select class="form-control" id="typeOfSauce" name="typeOfSauce">
+                                    <option value="robust">
+                                        Robust Inspired Tomato
+                                    </option>
+                                    <option value="tomato">
+                                        Tomato Sauce
+                                    </option>
+                                    <option value="marinara">
+                                        Marinara Sauce
+                                    </option>
+                                    <option value="bbq">
+                                        BBQ Sauce
+                                    </option>
+                                    <option value="alfredo">
+                                        Alfredo Sauce
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="card-body border rounded">
+        
+                            <div class="form-group m-0">
+                                <label for="howMuchSauce">
+                                    How much?</label>
+                                <select class="form-control" id="howMuchSauce" name="howMuchSauce">
+                                    <option value="light">
+                                        Light
+                                    </option>
+                                    <option value="Normal">
+                                        Normal
+                                    </option>
+                                    <option value="extra">
+                                        Extra
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+        
+        
+                </div>
+                <div class="card-header"></div>
+            </form>
         </div>
         <div role="tabpanel" class="tab-pane"
              id="tab3">
-            TAB THREE
+            <form action="#">
+                <div class="card ">
+                    <div class="card-header bg-primary shadow text-white font-weight-bold">Choose Cheese and Sauce</div>
+                    <!--                nested card1-->
+                    <div class="card p-4 ">
+                        <div class="card-header bg-light text-dark
+                            shadow font-weight-bold">
+                            Choose Meats
+                        </div>
+                        <ul class="list-group shadow mb-4">
+                            <li class="list-group-item">
+                                <div class="form-group form-check ">
+                                    <input class="form-check-input" type="checkbox" value="beef" id="beef" name="meats">
+                                    <label class="form-check-label" for="beef">
+                                        Beef
+                                    </label>                            </div>                            </li>
+                            <li class="list-group-item">
+                            <div class="form-group form-check ">
+                                <input class="form-check-input" type="checkbox" value="ham" id="ham" name="meats">
+                                <label class="form-check-label" for="ham">
+                                    Ham
+                                </label>                            </div>                            </li>
+                            <li class="list-group-item">
+                                <div class="form-group form-check ">
+                                    <input class="form-check-input" type="checkbox" value="phillySteak"
+                                           id="phillySteak"
+                                           name="meats">
+                                    <label class="form-check-label" for="phillySteak">
+                                        Philly Steak
+                                    </label>                            </div>                            </li>
+                            <li class="list-group-item">
+                                <div class="form-group form-check ">
+                                    <input class="form-check-input" type="checkbox" value="bacon"
+                                           id="bacon"
+                                           name="meats">
+                                    <label class="form-check-label" for="bacon">
+                                        Bacon
+                                    </label>                            </div>                            </li>
+                        </ul>
+   
+                        <!--        nested card 2-->
+                
+                
+                        <div class="card-header bg-light shadow text-dak ">Sauce</div>
+                        <div class="card-body border rounded">
+                    
+                            <div class="form-group m-0">
+                                <label for="howMuchCheese">
+                                    What Type?</label>
+                                <select class="form-control" id="typeOfSauce" name="typeOfSauce">
+                                    <option value="robust">
+                                        Robust Inspired Tomato
+                                    </option>
+                                    <option value="tomato">
+                                        Tomato Sauce
+                                    </option>
+                                    <option value="marinara">
+                                        Marinara Sauce
+                                    </option>
+                                    <option value="bbq">
+                                        BBQ Sauce
+                                    </option>
+                                    <option value="alfredo">
+                                        Alfredo Sauce
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="card-body border rounded">
+                    
+                            <div class="form-group m-0">
+                                <label for="howMuchCheese">
+                                    What Type?</label>
+                                <select class="form-control" id="howMuchSauce" name="howMuchSauce">
+                                    <option value="light">
+                                        Light
+                                    </option>
+                                    <option value="Normal">
+                                        Normal
+                                    </option>
+                                    <option value="extra">
+                                        Extra
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+            
+                    </div>
+        
+        
+                </div>
+                <div class="card-header"></div>
+            </form>
         </div>
         
     </div>
 
-<!--        tab2-->
 
-
-<!--        tab3-->
     </div> <!--    > container-->
 
 
