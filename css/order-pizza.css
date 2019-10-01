@@ -1,0 +1,8 @@
+.jumbotron {
+  background-image: url("./img/pizza/pizzaJumbo.png");
+  background-size: cover;
+}
+
+.jumboH1 {
+  background: rgba(255, 255, 255, 0.75);
+}
