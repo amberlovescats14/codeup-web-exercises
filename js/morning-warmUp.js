@@ -39,11 +39,11 @@ console.log(areaOfEquilateralTriangle(3))
 const concatenates = (a,b,c) => `${a} ${b} ${c}`
 console.log(concatenates("Hello", "Deimos", "Class"))
 
-const upperCase = str => str.toUpperCase()
-console.log(upperCase('granola bar'))
+const capitalize = str => str.toUpperCase()
+console.log(capitalize('granola bar'))
 
 //provided diameter
-const areaOfACircle = d => (
+const findAreaOfCircle = d => (
     (1/4) * Math.PI * (d ** 2)
 )
-console.log(areaOfACircle(5))
+console.log(findAreaOfCircle(5))
