@@ -41,3 +41,9 @@ console.log(concatenates("Hello", "Deimos", "Class"))
 
 const upperCase = str => str.toUpperCase()
 console.log(upperCase('granola bar'))
+
+//provided diameter
+const areaOfACircle = d => (
+    (1/4) * Math.PI * (d ** 2)
+)
+console.log(areaOfACircle(5))
