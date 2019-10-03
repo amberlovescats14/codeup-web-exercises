@@ -1,9 +1,9 @@
 //  node js/morning-warmUp.js
 
 //FIXME: fixme and todo comments are green by default
-//a: This comment is red
-//b: This comment is blue
-//c: This comment is pink
+//x: This comment is red
+//y: This comment is blue
+//z: This comment is pink
 
 
 
@@ -47,3 +47,6 @@ const findAreaOfCircle = d => (
     (1/4) * Math.PI * (d ** 2)
 )
 console.log(findAreaOfCircle(5))
+
+//quadrilateral is a 4 sided shape
+const perimeterOfQuadrilateral = (a, b, c ,d) => a + b + c + d
