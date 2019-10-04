@@ -50,3 +50,5 @@ console.log(findAreaOfCircle(5))
 
 //quadrilateral is a 4 sided shape
 const perimeterOfQuadrilateral = (a, b, c ,d) => a + b + c + d
+
+const primitive = a => a
