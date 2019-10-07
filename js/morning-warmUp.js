@@ -55,4 +55,9 @@ const primitive = a => typeof(a)
 console.log(primitive(3))
 
 const positiveEvenNum = num => (num > 0) && (num % 2 === 0);
-console.log(positiveEvenNum(2));
+console.log(positiveEvenNum(6));
+console.log("__________________")
+
+
+
+
