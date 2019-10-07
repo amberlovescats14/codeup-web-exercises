@@ -51,4 +51,8 @@ console.log(findAreaOfCircle(5))
 //quadrilateral is a 4 sided shape
 const perimeterOfQuadrilateral = (a, b, c ,d) => a + b + c + d
 
-const primitive = a => a
+const primitive = a => typeof(a)
+console.log(primitive(3))
+
+const positiveEvenNum = num => (num > 0) && (num % 2 === 0);
+console.log(positiveEvenNum(2));
