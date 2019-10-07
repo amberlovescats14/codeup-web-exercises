@@ -34,17 +34,17 @@ alert(`The amount for your rentals is ${amountDueForRentals(moviesRented)}`)
 
 //---------- weekly pay
 
-let moviesRented = [
-    {
-        name: "The little mermaid",
-        days: Number(prompt(`How many`))
+let myCompanies = [
+    google = {
+        pay: 400,
+        time: 6
     },
-    {
-        name: "Brother Bear",
-        days: 5
+    amazon = {
+        pay: 380,
+        time: 4
     },
-    {
-        name: "Hercules",
-        days: 1
+    facebook = {
+        pay: 350,
+        time: 10
     }
-]
+];
