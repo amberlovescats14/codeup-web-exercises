@@ -1,3 +1,4 @@
+
 let moviesRented = [
     {
         name: "The little mermaid",
@@ -14,7 +15,7 @@ let moviesRented = [
 ]
 //add up number of days * 3
 const amountDueForRentals = arr => arr.reduce((a,{days})=> a + days, 0) * 3;
-// console.log(amountDueForRentals(moviesRented))
+console.log(amountDueForRentals(moviesRented))
 
 //____________________
 
@@ -31,7 +32,7 @@ let myCompanies = [
         pay: 350,
         time: 10
     }
-]
+];
 
 //total up time and pay for each and add it to the totalAmount
 const calculateWeeklyPay = arr => {
@@ -61,7 +62,7 @@ let booleanUsernameLength = username <= 20;
 let noWhiteSpace = new RegExp(/^\s|\s$/)
 let good = !noWhiteSpace.test(username) && !noWhiteSpace.test(password)
 
-console.log(good)
+// console.log(good)
 
 let ableToLogin = good &&
     booleanUsernameLength &&
