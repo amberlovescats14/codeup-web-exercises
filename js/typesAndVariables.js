@@ -62,3 +62,8 @@ let noWhiteSpace = new RegExp(/^\s|\s$/)
 let good = !noWhiteSpace.test(username) && !noWhiteSpace.test(password)
 
 console.log(good)
+
+let ableToLogin = good &&
+    booleanUsernameLength &&
+    booleanPassword &&
+    booleanPassword;
