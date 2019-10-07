@@ -12,8 +12,7 @@ let moviesRented = [
         days: 1
     }
 ]
-
-// I cant figure out how to run reduce on this
+//add up number of days * 3
 const amountDueForRentals = arr => arr.reduce((a,{days})=> a + days, 0) * 3;
 // console.log(amountDueForRentals(moviesRented))
 
@@ -34,6 +33,7 @@ let myCompanies = [
     }
 ]
 
+//total up time and pay for each and add it to the totalAmount
 const calculateWeeklyPay = arr => {
     let pay = 0;
     arr.forEach(a => {
@@ -53,7 +53,7 @@ const canApplyOffer = (numOfItems, expired) => numOfItems > 2 && !expired
 let username = 'codeup';
 let password = 'notastrongpassword'
 let booleanPassword = password.length > 5
-let booleanMatching = password.indexOf(username) >= 0;
+let booleanMatching = password.indexOf(username) === -1;
 let booleanUsernameLength = username <= 20;
 
 // TESTING to make sure there is not white space at the beggininig or the end of the username and password
