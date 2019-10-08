@@ -58,6 +58,6 @@ const positiveEvenNum = num => (num > 0) && (num % 2 === 0);
 console.log(positiveEvenNum(6));
 console.log("__________________")
 
-
+const greaterThanFive = num => num >= 5;
 
 

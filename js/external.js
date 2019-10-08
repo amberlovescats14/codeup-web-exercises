@@ -2,11 +2,11 @@ console.log(`Hello from external JavaScript`)
 
 alert(`Welcome to my Website`)
 
-let favoriteColor = prompt(`What is your favorite color?`)
 
+let favoriteColor = prompt(`What is your favorite color?`)
 const response = () => (
-    favoriteColor.trim().toLowerCase() == 'red' ?
-        alert(`Great! Red is my favorite color too!`) :
+    favoriteColor.trim().toLowerCase() === 'blue' ?
+        alert(`Great! Blue is my favorite color too!`) :
         alert(`Wow! ${favoriteColor} is very beautiful!`)
 )
 response()
@@ -46,6 +46,7 @@ let myCompanies = [
         pay: 350,
         time: Number(prompt(`How many hours did you work? (Facebook)`))    }
 ];
+
 const calculateWeeklyPay = arr => {
     let pay = 0;
     arr.forEach(a => {
@@ -87,5 +88,4 @@ const verification = (obj) => {
 
 }
 verification(login)
-
 
