@@ -60,9 +60,7 @@ console.log("__________________")
 
 const greaterThanFive = num => num >= 5;
 
-//! 10/9/2019
-
-
+//@ 10/9/2019
 const askForString = () => {
     let prompt = prompt("Please enter your name: ")
     if(prompt == '') return alert(helloThereStranger())
