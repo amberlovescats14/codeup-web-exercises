@@ -19,13 +19,30 @@ console.log("hello from conditionals lec.js!");
 //Together: Show a specific navbar if user is admin
 //Together: Send a 20% off coupon if its users birthday
 //Together: Write an if statement that alerts "It's raining" if isRainy is true
+// let isRainy = false;
+// isRainy ? alert(`It's rainy`) : ''
 //Together: Write an if statement that alerts the user whether or not they have enough money to buy a new item. Assume there are no hidden fees or taxes.
-
+// let itemCost = 100;
+// let currentBalance = 200;
+// itemCost < currentBalance ? alert(`Buy it!`) : ''
 
 
 //TODO: Write an if statement that alerts "Sorry, game over" if numberOfLives is 0
+const checkStatus = numberOfLives => (
+    numberOfLives === 0 ? alert(`Game Over`) : ''
+)
+
+
 //TODO: Write an if statement that alerts "It's snowing!" if weather is equal to "snowing"
+const checkWeather = weather => (
+    weather.toLowerCase() === 'snowing' ? alert(`Its snowing!`) : ''
+)
+
 //TODO: Write an if statement that alerts true if numberInput is greater than but not equal to 10
+const isGreaterThanTen = numberInput => (
+    numberInput > 10 ? alert(`True.`) : ''
+)
+
 
 
 
@@ -48,15 +65,30 @@ console.log("hello from conditionals lec.js!");
 
 // =============== IF / ELSE STATEMENT EXAMPLES ================
 //Together: Show a specific navbar if user is admin, else show a different navbar
+
 //Together: Write an if statement that alerts "It's raining" if isRainy is true, else return "have a nice day!"
 
 
 
 
 //TODO: Write an if statement that alerts "Sorry, game over" if numberOfLives is 0, else alert "Next Level!"
+const checkIfGameIsOver = numberOfLives => (
+    numberOfLives === 0 ? `Sorry game over` : `Next Level!`
+)
 //TODO: Write an if statement that alerts "It's snowing!" if weather is equal to "snowing", else alert "Check back later for more details!"
+const isItSnowing = snowing => {
+    if (snowing) return `It's snowing`;
+    else return `Check back later for more details!`
+}
+
+
 //TODO: Write an if statement that alerts true if numberInput is greater than 10, else alert "the number is less than 10"
-//TODO: Refactor todo#1 as a function named checkIfGameIsOver, that accepts numberOfLives and returns "Sorry, game over" if numberOfLives is 0, else return "Next Level!. 
+const isGreater = numberInput => (
+    numberInput > 10 ? alert(`true`) : alert(`The number is less than 10`)
+)
+//TODO: Refactor todo#1 as a function named checkIfGameIsOver, that accepts numberOfLives and returns "Sorry, game over" if numberOfLives is 0, else return "Next Level!.
+
+
 
 
 
@@ -79,7 +111,10 @@ console.log("hello from conditionals lec.js!");
 
 
 //TODO: Write a confirm asking the user if they are 13 years of age or older. If they are, alert "You may proceed", if they are not, alert "Sorry, you are not able to proceed"
-
+const checkAge = () => {
+    let age = confirm(`Are you 13 years of age or older?`)
+    return age ? `You my proceed` : `Sorry, you are not able to proceed.`
+}
 // ================ IF / ELSE IF / ELSE STATEMENT SYNTAX ===============
 // if(condition1){
 //     // code here runs if condition evaluates to true
@@ -116,7 +151,12 @@ console.log("hello from conditionals lec.js!");
 
 //TODO: Write a function that accepts a string that is a traffic light color as an input. When this function is called, it should return a message informing the user what to do when approaching that color light at an intersection.
 
-
+const atAnIntersection = color => {
+    if(color === 'red') return `Stop`
+    else if(color === 'yellow') return `Slow`
+    else if (color === 'green') return 'GO!'
+    else return `Proceed with caution.`
+}
 
 
 
@@ -151,9 +191,11 @@ console.log("hello from conditionals lec.js!");
 
 
 //TODO: Refactor the following conditional as a ternary
+//:you can set a ternary to a variable
+//: let message = success ? `this is true` : `this is false`
 
-// var weather = "sunny";
-// var weatherMessage;
+// let weather = "sunny";
+// let weatherMessage;
 
 // if(weather === "rainy"){
 //    weatherMessage = "It's raining!";
@@ -162,6 +204,10 @@ console.log("hello from conditionals lec.js!");
 // }
 
 //WRITE YOUR TERNARY STATEMENT HERE!
+//@ THIS_IS_COOL!
+let weather = 'sunny'
+let weatherMessage = weather === 'rainy' ? `It's raining!` :`Have a nice day!`
+console.log(weatherMessage)
 
 
 
@@ -184,9 +230,32 @@ console.log("hello from conditionals lec.js!");
 
 
 //TODO: Write a switch statement that evaluates weather as the condition. Check for "rainy", "sunny", "snow", and a default case.
-
+const switchWeather = weather => {
+   switch(weather){
+        case `rainy`:
+            alert(`It's raining`)
+            break;
+        case `sunny`:
+            alert(`It is hot outside!`)
+            break;
+        case `snow`:
+            alert(`Take your jacket!`)
+            break;
+        default:
+            alert(`have a great day`)
+    }
+    return null
+}
 
 //TODO: Rewrite the intersection function from earlier as a switch statement.
+const intersectionSwitch = color => {
+    switch(color){
+        case `red`: return `Stop`;
+        case `yellow`: return `Slow`;
+        case `green`: return `GO!`;
+        default: return `proceed with caution`
+    }
+}
 
 
 
