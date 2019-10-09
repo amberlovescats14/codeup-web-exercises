@@ -31,9 +31,9 @@ const returnMessage = trueOrFalse => nestedReturnMessage(trueOrFalse)
 //6..
 const willLoginUser = (username, password, age, boolAdmin) => {
     if(boolAdmin)
-        if(username.indexOf(password) === -1) return true
+        if(username.indexOf(password) === -1) return true;
     if(username.indexOf(password) === -1)
-        if(age >= 18) return true
+        if(age >= 18) return true;
     return false
         
 }
