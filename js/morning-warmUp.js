@@ -15,16 +15,16 @@ const findAreaOfTriangle =( a, b, c) => {
     let p = (a + b + c) / 2
     return Math.sqrt(p*(p-a)*(p-b)*(p-c))
 }
-console.log(findAreaOfTriangle(5,6,7));
+// console.log(findAreaOfTriangle(5,6,7));
 
 const sayHi = () => 'Hi'
-console.log(sayHi());
+// console.log(sayHi());
 
 const helloName = name => `Hello ${name}.`
-console.log(helloName('Amber'))
+// console.log(helloName('Amber'))
 
 const returnFirstElement = arr => arr[0];
-console.log(returnFirstElement([1,2,3,4,5]))
+// console.log(returnFirstElement([1,2,3,4,5]))
 
 // const areaOfEquilateralTriangle = num => {
 //     return (Math.sqrt(3) / 4 ) * (num ** 2)
@@ -34,29 +34,29 @@ const areaOfEquilateralTriangle = num => {
     return findAreaOfTriangle(num, num, num);
 }
 
-console.log(areaOfEquilateralTriangle(3))
+// console.log(areaOfEquilateralTriangle(3))
 
 const concatenates = (a,b,c) => `${a} ${b} ${c}`
-console.log(concatenates("Hello", "Deimos", "Class"))
+// console.log(concatenates("Hello", "Deimos", "Class"))
 
 const capitalize = str => str.toUpperCase()
-console.log(capitalize('granola bar'))
+// console.log(capitalize('granola bar'))
 
 //provided diameter
 const findAreaOfCircle = d => (
     (1/4) * Math.PI * (d ** 2)
 )
-console.log(findAreaOfCircle(5))
+// console.log(findAreaOfCircle(5))
 
 //quadrilateral is a 4 sided shape
 const perimeterOfQuadrilateral = (a, b, c ,d) => a + b + c + d
 
 const primitive = a => typeof(a)
-console.log(primitive(3))
+// console.log(primitive(3))
 
 const positiveEvenNum = num => (num > 0) && (num % 2 === 0);
-console.log(positiveEvenNum(6));
-console.log("__________________")
+// console.log(positiveEvenNum(6));
+// console.log("__________________")
 
 const greaterThanFive = num => num >= 5;
 
@@ -70,4 +70,9 @@ const helloThereStranger = (str = "Stranger") => {
     return `Hello there ${str}`
 }
 
+const quotent = (a, b) => (
+    typeof a === 'number' && typeof b === 'number' ? Number(a) / Number(b) : false
+)
+
+console.log(`here: `, quotent('10',2))
 
