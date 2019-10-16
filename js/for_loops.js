@@ -23,6 +23,14 @@ const func2 = () => {
         let num = i+1
         console.log(str.repeat(num))
     }
+    return null
 }
 
 //z:
+const func3 = () => {
+    for(let i=100; i>0; i-=5){
+        console.log(i)
+    }
+    return null
+}
+func3()
