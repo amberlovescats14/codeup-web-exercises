@@ -7,7 +7,7 @@ const oddNumber = () => {
         if(odd % 2 !== 0) break;
     }
     console.log(`Number to skip is ${odd}`)
-    for(let i=1; i<=50 ;i++){
+    for(let i=1; i<=50 ;i+=2){
         if(i === odd) continue;
         console.log(i)
     }
