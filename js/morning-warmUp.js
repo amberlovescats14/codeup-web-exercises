@@ -74,4 +74,5 @@ const quotent = (a, b) => (
     typeof a === 'number' && typeof b === 'number' ? Number(a) / Number(b) : false
 )
 
-const printArray = arr => arr.forEach(a => console.log(a))
+const printArray = arr => arr.forEach(a => a)
+console.log(`here: `, printArray([1,2,3,4]))
