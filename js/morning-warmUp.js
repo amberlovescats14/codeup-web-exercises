@@ -75,4 +75,7 @@ const quotent = (a, b) => (
 )
 
 const printArray = arr => arr.forEach(a => a)
-console.log(`here: `, printArray([1,2,3,4]))
+
+const isEightCharicters = str =>
+    str.length >= 8  && typeof str === 'string' ? true : false
+console.log(isEightCharicters('amber'))
