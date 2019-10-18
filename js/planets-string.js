@@ -34,4 +34,14 @@
     }
     document.getElementById('planets').append(ul)
     
+    
+    
+    //::++++++++++++
+    let planetUL = `<ul>`
+    for (let planet of planetsArray) {
+        planetUL += `<li> ${planet} </li>`
+    }
+    
 })();
+
+
