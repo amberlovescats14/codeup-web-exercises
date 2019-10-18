@@ -78,4 +78,7 @@ const printArray = arr => arr.forEach(a => a)
 
 const isEightCharicters = str =>
     str.length >= 8  && typeof str === 'string' ? true : false
-console.log(isEightCharicters('amber'))
+
+const isNumeric = value => value == parseFloat(value)
+
+const roundDown = float => isNumeric(float) ? Math.floor(parseFloat(float)): ''
