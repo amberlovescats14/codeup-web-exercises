@@ -1,165 +1,189 @@
-"use strict";
-console.log("Welcome to Intro to Objects!");
-
-/*********************************************
-*              INTRO TO OBJECTS
-******************************************** */
-
-/**
- * Objects are an unordered collection of related data in the form of
- * key:value pairs
- */
-
-
-/*********************************************
- *              CREATING NEW OBJECTS
- ******************************************** */
-
-/**
- * Objects can be created in JavaScript through the use of the 'new
- * Object()' constructor, or Object literal notation using curly braces.
- */
-
-/**
- * TO DO TOGETHER: Create a new variable (of type Object) and call it
- * 'myPhone'. Use either the constructor or Object literal notation.
- */
-
-//! Object literal
-let myPhone = {
-
-}
-/**
- * TO DO: Create a new Object and call it 'myMac'. use either the
- * constructor or Object literal notation.
- */
-let myMac = new Object()
-
-/*********************************************
- *              PROPERTIES
- ******************************************** */
-
-/**
- * TO DO TOGETHER: Using dot notation, assign these properties to your phone
- * Object: 'model', 'color', 'storage'. Console log your phone variable to
- * check that the information was stored properly.
- */
-myPhone.model = 'iPhone XS MAX'
-myPhone.color = 'gold'
-myPhone.storage = '640'
-
-console.log(myPhone)
-
-
-/**
- * TO DO: Using dot notation, assign these properties to your Mac
- * Object: 'model', 'size', 'year', Console log the Object to check if the
- * information was stored properly
- */
-myMac.model = 'MacBook Pro'
-myMac.size = '15'
-myMac.year = 2019
-console.log(myMac)
-/**
- * TO DO TOGETHER: Assign a 'name' property to your phone. This should be of
- * type Object and store properties for the user's 'firstName' and
- * 'lastName'. Use console log to access the user's 'lastName'
- */
-
-myPhone.name = {
-
-}
-myPhone.name.firstName = "Amber"
-myPhone.name.lastName = "Jones"
-
-myPhone.apps = ['music', 'facebook', 'gmail']
-console.log(myPhone.apps[1])
-/**
- * TO DO: Using dot notation, assign a property called 'folders' that stores
- * an Array representing different folders in your system.
- */
-myMac.folders = ['workspace', 'codeup', 'pictures']
-/**
- * TO DO: Assign a 'login' property. This should be an object that stores
- * 'username','fakePassword' and 'email'
- */
-myMac.login = {
-    email: 'amber@gmail.com',
-    username: 'amberlovescats14',
-    password: 'ambie123'
-}
-
-/*********************************************
- *                  METHODS
- ******************************************** */
-
-/**
- * TO DO TOGETHER: We are going to add functionality to our phone Object.
- * Using the dot notation, add a method named 'call' that console logs the
- * message: "Dialing..."
- */
-myPhone.call = () => {
-    console.log('Dialing...')
-}
-/**
- * TO DO: Let's add functionality to our Mac Object. Create a method named
- * 'powerOn'. When called, this should display a console message that says
- * "Powering on..."
- */
-myMac.users = [
-    {
-        id: 1,
-        username: 'sophie',
-        
-    },
-    {
-        id: 2,
-        username: 'vivian'
-    },
-    {
-        id: 3,
-        username: 'david'
+(function () {
+    "use strict"
+    
+    /**
+     * TODO:
+     * Create an object with firstName and lastName properties that are strings
+     * with your first and last name. Store this object in a variable named
+     * `person`.
+     *
+     * Example:
+     *  > console.log(person.firstName) // "Rick"
+     *  > console.log(person.lastName) // "Sanchez"
+     */
+    let person = {
+        firstName: 'Amber',
+        lastName: 'Jones',
     }
-]
-console.log(myMac.users[1].username)
-myMac.users.forEach(user => {
-    console.log()
-})
-/**
- * TO DO TOGETHER: Let's add one more piece of functionality. Create a
- * method on the phone object that returns a message displaying the user's
- * firstName and lastName. Hint: use the 'this' keyword.
- */
+    /**
+     * TODO:
+     * Add a sayHello method to the person object that returns a greeting using
+     * the firstName and lastName properties.
+     * console.log the returned message to check your work
+     *
+     * Example
+     * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
+     */
+    person.sayHello = function () {
+        return `Hello from ${this.firstName} ${this.lastName}`
+    }
+    
+    /** TODO:
+     * HEB has an offer for the shoppers that buy products amounting to
+     * more than $200. If a shopper spends more than $200, they get a 12%
+     * discount. Write a JS program, using conditionals, that logs to the
+     * browser, how much Ryan, Cameron and George need to pay. We know that
+     * Cameron bought $180, Ryan $250 and George $320. Your program will have to
+     * display a line with the name of the person, the amount before the
+     * discount, the discount, if any, and the amount after the discount.
+     *
+     * Uncomment the lines below to create an array of objects where each object
+     * represents one shopper. Use a foreach loop to iterate through the array,
+     * and console.log the relevant messages for each person
+     */
+    
+    let shoppers = [
+        {name: 'Cameron', amount: 180},
+        {name: 'Ryan', amount: 250},
+        {name: 'George', amount: 320}
+    ]
+    const showDiscounts = arr => {
+        let discount = .12
+        arr.forEach(a => {
+            if (a.amount > 200) {
+                console.log(`
+                Name: ${a.name} \t
+                Spent: $${a.amount} \t
+                Discount: 12% \t
+                AmountDue: $${a.amount - (discount * a.amount)}`)
+            }
+            console.log(`
+                 Name: ${a.name} \t
+                 Spent: $${a.amount} \t
+                 Discount: 0 \t
+                 AmountDue: $${a.amount}`)
+        })
+        return null
+        
+    }
+    /** TODO:
+     * Create an array of objects that represent books and store it in a
+     * variable named `books`. Each object should have a title and an author
+     * property. The author property should be an object with properties
+     * `firstName` and `lastName`. Be creative and add at least 5 books to the
+     * array
+     *
+     * Example:
+     * > console.log(books[0].title) // "The Salmon of Doubt"
+     * > console.log(books[0].author.firstName) // "Douglas"
+     * > console.log(books[0].author.lastName) // "Adams"
+     */
 
-/**
- * TO DO: One last thing. Let's add a 'currentUser' method that displays the
- * Mac user's 'username' and 'email'. Use the 'this' keyword to reference
- * the properties we created earlier.
- */
+    /**
+     * TODO:
+     * Loop through the books array and output the following information about
+     * each book:
+     * - the book number (use the index of the book in the array)
+     * - the book title
+     * - author's full name (first name + last name)
+     *
+     * Example Console Output:
+     *
+     *      Book # 1
+     *      Title: The Salmon of Doubt
+     *      Author: Douglas Adams
+     *      ---
+     *      Book # 2
+     *      Title: Walkaway
+     *      Author: Cory Doctorow
+     *      ---
+     *      Book # 3
+     *      Title: A Brief History of Time
+     *      Author: Stephen Hawking
+     *      ---
+     *      ...
+     */
 
-
-
-
-/*********************************************
- *                  NESTED VALUES
- ******************************************** */
-
-/**
- * Because an Object is a collection of data and functionality, very often
- * we will see nested values. This can mean an Array of Objects containing
- * Arrays, Objects containing other Objects and so on.
- *
- * It is important to understand the shape of our data so that we can
- * navigate through it.
- */
-
-
-/*********************************************
- *                  ARRAYS OF OBJECTS
- ******************************************** */
-
-/**
- * If we have an Array of Objects, we can iterate through it to access each
- * Object element and pull the properties and methods that we need.
- */
-
+    /**
+     * Bonus:
+     * - Create a function named `createBook` that accepts a title and author
+     *   name and returns a book object with the properties described
+     *   previously. Refactor your code that creates the books array to instead
+     *   use your function.
+     * - Create a function named `showBookInfo` that accepts a book object and
+     *   outputs the information described above. Refactor your loop to use your
+     *   `showBookInfo` function.
+     */
+    let books = [
+        {
+            title: 'The Art of Mastery',
+            author: {
+                firstName: `Robert`,
+                lastName: `Greene`
+            }
+        },
+        {
+            title: `The Weight of the World`,
+            author: {
+                firstName: `David`,
+                lastName: `Joy`
+            }
+        },
+        {
+            title: `Evelation`,
+            author: {
+                firstName: `Stephen`,
+                lastName: `King`
+            }
+        },
+        {
+            title: `Snuff`,
+            author: {
+                firstName: `David`,
+                lastName: `Palahniuk`
+            }
+        },
+        {
+            title: `To Dance With Kings`,
+            author: {
+                firstName: `Rosalind`,
+                lastName: `Laker`
+            }
+        }
+    ]
+    
+    //! CREATE
+    const createBook = (title, author) => {
+        let name = author.split(' ')
+        let newBook =  {
+            title,
+            author: {
+                firstName: name[0],
+                lastName: name[1]
+            }
+        }
+        return addBook(newBook)
+    }
+    //! ADD
+    const addBook = obj => {
+        books.push(obj)
+        console.log(`Book Added!`)
+        return showBookInfo(books)
+    }
+    
+    //!READ
+    const showBookInfo = arr => {
+        arr.forEach((a, i) => {
+            console.log(`
+                 Book # ${i + 1}
+                 Title: ${a.title}
+                 Author: ${a.author.firstName} ${a.author.lastName}
+                 ------`
+            )
+            
+        })
+        return `Amber's Book Collection`
+    }
+    createBook(`The Laws of Human Nature`, `Robert Greene`)
+    
+})()
