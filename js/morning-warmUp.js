@@ -82,3 +82,23 @@ const isEightCharicters = str =>
 const isNumeric = value => value == parseFloat(value)
 
 const roundDown = float => isNumeric(float) ? Math.floor(parseFloat(float)): ''
+
+//!I DONT KNOW HOW TO COUNT UP RERCURSIVLY
+// const counting = (num) => {
+//     num--
+//     if(num === 0) return `done`;
+//     return (10 - num )+ counting(num)
+// }
+// console.log(counting(10))
+
+
+const counting = num => {
+    let count = 0
+    while(true){
+        console.log(count)
+        count++
+        if(count === num ) break;
+    }
+    return count
+}
+console.log(counting(10))

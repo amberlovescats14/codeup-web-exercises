@@ -1,0 +1,23 @@
+{
+  "name": "codeup-web-exercise",
+  "version": "1.0.0",
+  "description": "Repo for Codeup front-end exercises",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amberlovescats14/codeup-web-exercises.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amberlovescats14/codeup-web-exercises/issues"
+  },
+  "homepage": "https://github.com/amberlovescats14/codeup-web-exercises#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "node-fetch": "^2.6.0"
+  }
+}
