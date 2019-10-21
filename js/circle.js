@@ -10,12 +10,9 @@
             return Math.PI * (this.radius ** 2)
         }
         logInfo(doRounding){
-            if(doRounding) {
-                let r = Math.round(this.radius)
-                let a = Math.round(this.getArea())
-                return `A circle with a radius of ${r} has an area of ${a}`
-            }
-            return `A circle with a radius of ${this.radius} has an area of ${this.getArea()}`
+          
+          let area = doRounding ? Math.round(this.getArea()) : this.getArea()
+            return `A circle with a radius of ${this.radius} has an area of ${area}`
         }
 
     }
