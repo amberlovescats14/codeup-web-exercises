@@ -45,7 +45,7 @@
 
         // TODO: Set text color on every other list item to grey
             for(let i=0; i<listItems.length; i++){
-                if(listItems[i].hasAttribute('data-dbid')) listItems[i].style.color = 'blue'
+                if(listItems[i].getAttribute('data-dbid') == 1) listItems[i].style.color = 'blue'
                 if(i % 2 === 0) listItems[i].style.color = 'grey'
             }
         
@@ -60,7 +60,7 @@
         
         const hideButton = () => {
         let hide = document.querySelector('hide')
-            
+        
         
         }
         
