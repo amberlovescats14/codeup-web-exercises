@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mapbox Map</title>
+    <!--    bootstrap css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Mapbox CSS -->
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/mapbox.css">
+</head>
+<body>
+
+<div class="jumbotron text-center">
+    <div class="h1">Amber's Mapbox Map!</div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 col-sm-12 card">
+            <h4>Enter address to find location</h4>
+            <form action="#" id="mapForm">
+                <div class="form-group card">
+                    <input type="text" placeholder="Address" id="inp"
+                           class="form-control">
+                    <button type="submit" id="btn"
+                            class="btn btn-primary">Get Address</button>
+                </div>
+                <div class="form-group card">
+                    <label for="zoom">Adjust Zoom</label>
+                    <select name="zoom" id="zoom" class="form-control">
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                        <option value="15">15</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+        <div class="col-lg-6 col-sm-12 card">
+            <h4>Or, click on the map to see address</h4>
+            <!-- The HTML element that serves as the Mapbox container -->
+            <div id='map'></div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Mapbox JS -->
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+
+<script src="./js/keys.js"></script>
+<script src="./js/mapbox-geocoder-utils.js"></script>
+<script src="./js/mapbox-api-lec.js"></script>
+<script src="./js/mapbox-find-address.js"></script>
+<script src="./js/mapbox-restraunts.js"></script>
+</body>
+</html>

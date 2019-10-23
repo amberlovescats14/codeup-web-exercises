@@ -1,6 +1,5 @@
 let button = document.getElementById('btn')
 let input = document.getElementById('inp')
-console.log(button)
 const getAddress = (e) => {
     e.preventDefault()
     let value = input.value
@@ -14,12 +13,27 @@ const getAddress = (e) => {
     
             new mapboxgl.Popup()
                 .setLngLat(res)
-                .setHTML(`<h1>Lng: ${res[0]} Lat: ${res[1]}</h1>`)
+                .setHTML(`<h4>Lng: ${res[0]} Lat: ${res[1]}</h4>`)
                 .addTo(map)
+            
+            // map.flyTo()
         })
 }
 
 button.addEventListener('click', (e)=>getAddress(e))
 
 
-// MARKER DOESNT HAVE A ZOOM
+//! ZOOM OPTIONS
+let select = document.getElementById('zoom')
+
+const changeZoom = () => {
+    let value = select.value
+        map.flyTo({
+            center: centerCords,
+            zoom: value,
+            speed: 0.2,
+            curve: 1
+        })
+    
+}
+select.addEventListener('change', ()=> changeZoom())

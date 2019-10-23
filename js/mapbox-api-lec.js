@@ -1,23 +1,18 @@
-/**********************************************
- * 			SETTING UP KEYS.JS
- *********************************************/
-// TODO TOGETHER: Open .gitignore and add keys.js. Add keys.js file and import to mapbox html file. Your api keys are stored in keys.js and are added to the .gitignore so they are protected
-/**********************************************
- * 			CUSTOMIZING THE MAP
- *********************************************/
-// Predefined map styles --> https://docs.mapbox.com/mapbox-gl-js/api/#map
-// A map center can be set by passing in the latitude and longitude coordinates of a location as an array [LONGITUDE_VALUE, LATITUDE_VALUE]
-// Zoom levels range from 0 up to 24, with 0 being a global view and 24 being the most detailed at street level (the max zoom level depends on the location).
+//? Predefined map styles --> https://docs.mapbox.com/mapbox-gl-js/api/#map
 
-//TODO TOGETHER: Set map to san antonio area using the coordinates [-98.4916, 29.4252]
+//? // Marker Docs --> https://docs.mapbox.com/mapbox-gl-js/api/#marker
 
+//? // Popup docs --> https://docs.mapbox.com/mapbox-gl-js/api/#popup
 
+//? // Geocoding Docs --> https://docs.mapbox.com/api/search/#geocoding
+
+let centerCords = [-98.4916, 29.4252]
 mapboxgl.accessToken = MAPBOX_KEY;
 let map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/outdoors-v10',
-    zoom: 10,
-    center: [-98.4916, 29.4252],
+    zoom: 13,
+    center: centerCords,
     logoPosition: 'top-left',
     // maxOut: 10
 });
@@ -27,22 +22,17 @@ let map = new mapboxgl.Map({
 //* Lng, Lat
 
 
-//TODO: Experiment with different map styles, zoom levels, and centers. You will need to reference the mapbox docs. (~15 minutes)
 
 
-/**********************************************
- * 					MARKERS
- *********************************************/
-// Marker Docs --> https://docs.mapbox.com/mapbox-gl-js/api/#marker
-// Markers are specific locations on a map
-//Use the .setLngLat() and .addTo() methods to add marker to the map
-
-
-// TODO TOGETHER: Add a marker to the map using the following coordinates [-98.4916, 29.4260]. This marker will mark the Alamo on our map.
-// TODO TOGETHER: Change the color of the marker
 //*MARKER is an object
 let markerOptions = {
     color: "#FFC0CB",
+    draggable: true,
+    anchor: 'bottom'
+}
+
+let codeupOptions = {
+    color: "green",
     draggable: true,
     anchor: 'bottom'
 }
@@ -51,7 +41,7 @@ let markerOptions = {
 //     .setHTML("<p>Codeup Rocks!</p>")
 //     .addTo(map)
 let codupCords = [-98.489570, 29.426780]
-let codeup = new mapboxgl.Marker(markerOptions)
+let codeup = new mapboxgl.Marker(codeupOptions)
     .setLngLat([-98.489570, 29.426780])
     .addTo(map)
 
@@ -61,6 +51,7 @@ let myhouse = new mapboxgl.Marker(markerOptions)
     .setLngLat([-98.363970, 29.594980])
     .addTo(map)
 
+//! Showing addresses where clicked
 map.on('click', (mark)=> {
     let lat = mark.lngLat.lat
     let lng = mark.lngLat.lng
@@ -71,42 +62,21 @@ map.on('click', (mark)=> {
             console.log(res)
             new mapboxgl.Popup()
                 .setLngLat([lng,lat])
-                .setHTML(`<h1>${res}</h1>`)
+                .setHTML(`<p>${res}</p>`)
                 .addTo(map)
         })
+    //! Marker CLICKS
+    console.log(`MARK: `, mark.lngLat)
+    restruants.forEach(r => {
+        console.log(`R:::`, r.cords)
+    })
 })
-
-
-
-
-// TODO: Experiment with the color, and setting the LngLat
-// TODO: Update the marker object to make the marker draggable. *Hint: reference the docs!
-
-
-/**********************************************
- * 					POPUPS
- *********************************************/
-// Popups are the info boxes that appear on a map and may describe a given location.
-// Popup docs --> https://docs.mapbox.com/mapbox-gl-js/api/#popup
-
-
-// TODO TOGETHER: Add a popup to the map over codeup. Set the html as a paragraph that says "Codeup Rocks!"
-// TODO TOGETHER: Comment out the popup we just added. Add a popup to the alamo marker.
-
-
-
-// TODO: Review the popup docs. What are some additional options we can pass to the popup?
-// TODO: Try setting the text by using ".setText()" instead of ".setHTML()"
-
 
 
 /**********************************************
  * 					Geocoder
  *********************************************/
-// Geocoding Docs --> https://docs.mapbox.com/api/search/#geocoding
 
-
-// TODO TOGETHER: Using the Geocoder helper function, log the coordinates of Codeup and recenter the map to focus on Codeup. Comment out previous map code.
 //!USE WITH INPUT
 // geocode(`300 dolorosa, San Antonio, TX,78205 `, MAPBOX_KEY)
 //     .then(res => {
