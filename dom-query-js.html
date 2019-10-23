@@ -7,6 +7,9 @@
 <body>
 
 <h1 id="main-header">Hello World!</h1>
+<div id="withButton" style="background: yellow">
+    <button id="hide">DOUBLE_CLICK_TO_HIDE</button>
+</div>
 <ul>
     <li data-dbid="1">Item 1</li>
     <li data-dbid="2">Item 2</li>
@@ -24,13 +27,13 @@
     pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
     culpa qui officia deserunt mollit anim id est laborum.
 </p>
-<!--<button class="hide" onclick="hideButton()">HIDE ME</button>-->
+
 
 
 <button id="ones">Change Header</button>
-<button id="two">Sub Header</button>
-<button id="three">button3</button>
-<button id="four">button4</button>
+<button id="two">Sub Header Blue</button>
+<button id="three">Change the Li's</button>
+<button id="four">Mission Accomplished</button>
 
 <script>
     (function() {
@@ -52,6 +55,7 @@
         }
         buttonTwo.addEventListener('click', subBlue)
         
+        //z: BUTTON 3
         const changeTheLi = () => {
             let listItems = document.getElementsByTagName('li')
             for(let i=0; i<listItems.length; i++){
@@ -61,12 +65,19 @@
         }
         buttonThree.addEventListener('click', changeTheLi)
         
+        //z: BUTTON 4
         const changeSubPara = () => {
             let subParagraphs = document.getElementsByClassName('sub-paragraph')
             subParagraphs[0].innerHTML =   'Mission Accomplished!'
         }
         buttonFour.addEventListener('click', changeSubPara)
         
+        //z: HIDE
+        let hideButton = document.getElementById('hide')
+        const deleteButton = () => {
+            document.getElementById('hide').remove(this)
+        }
+        hideButton.addEventListener('dblclick', deleteButton)
     })();
 </script>
 </body>

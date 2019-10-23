@@ -5,6 +5,14 @@
 //y: This comment is blue
 //z: This comment is pink
 
+//! HELPER_FUNCTIONS //
+const isString = value => typeof value === 'string'
+
+const isNumeric = value => value == parseFloat(value)
+
+//!---------------------
+
+
 
 
 const func = (a, b) => a + b;
@@ -79,7 +87,7 @@ const printArray = arr => arr.forEach(a => a)
 const isEightCharicters = str =>
     str.length >= 8  && typeof str === 'string' ? true : false
 
-const isNumeric = value => value == parseFloat(value)
+
 
 const roundDown = float => isNumeric(float) ? Math.floor(parseFloat(float)): ''
 
@@ -101,4 +109,12 @@ const counting = num => {
     }
     return count
 }
-console.log(counting(10))
+const createPersonObject = (name, age) => {
+    if(isString(name))
+        if(isNumeric(age))
+            return {
+            name,
+            age,
+        }
+}
+console.log(createPersonObject("amber", 32))
