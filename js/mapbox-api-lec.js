@@ -2,7 +2,6 @@
  * 			SETTING UP KEYS.JS
  *********************************************/
 // TODO TOGETHER: Open .gitignore and add keys.js. Add keys.js file and import to mapbox html file. Your api keys are stored in keys.js and are added to the .gitignore so they are protected
-
 /**********************************************
  * 			CUSTOMIZING THE MAP
  *********************************************/
@@ -11,6 +10,22 @@
 // Zoom levels range from 0 up to 24, with 0 being a global view and 24 being the most detailed at street level (the max zoom level depends on the location).
 
 //TODO TOGETHER: Set map to san antonio area using the coordinates [-98.4916, 29.4252]
+
+
+mapboxgl.accessToken = MAPBOX_KEY;
+let map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/outdoors-v10',
+    zoom: 10,
+    center: [-98.4916, 29.4252],
+    logoPosition: 'top-left',
+    // maxOut: 10
+});
+
+//*id map
+//* zoom level : 0-24 //14 is ideal
+//* Lng, Lat
+
 
 //TODO: Experiment with different map styles, zoom levels, and centers. You will need to reference the mapbox docs. (~15 minutes)
 
@@ -25,6 +40,43 @@
 
 // TODO TOGETHER: Add a marker to the map using the following coordinates [-98.4916, 29.4260]. This marker will mark the Alamo on our map.
 // TODO TOGETHER: Change the color of the marker
+//*MARKER is an object
+let markerOptions = {
+    color: "#FFC0CB",
+    draggable: true,
+    anchor: 'bottom'
+}
+// let codeupPopup = new mapboxgl.Popup()
+//     .setLngLat([-98.489615, 29.426827])
+//     .setHTML("<p>Codeup Rocks!</p>")
+//     .addTo(map)
+let codupCords = [-98.489570, 29.426780]
+let codeup = new mapboxgl.Marker(markerOptions)
+    .setLngLat([-98.489570, 29.426780])
+    .addTo(map)
+
+// codeup.setPopup(codeupPopup)
+
+let myhouse = new mapboxgl.Marker(markerOptions)
+    .setLngLat([-98.363970, 29.594980])
+    .addTo(map)
+
+map.on('click', (mark)=> {
+    let lat = mark.lngLat.lat
+    let lng = mark.lngLat.lng
+    
+
+    reverseGeocode({lng, lat}, MAPBOX_KEY)
+        .then(res => {
+            console.log(res)
+            new mapboxgl.Popup()
+                .setLngLat([lng,lat])
+                .setHTML(`<h1>${res}</h1>`)
+                .addTo(map)
+        })
+})
+
+
 
 
 // TODO: Experiment with the color, and setting the LngLat
@@ -42,6 +94,7 @@
 // TODO TOGETHER: Comment out the popup we just added. Add a popup to the alamo marker.
 
 
+
 // TODO: Review the popup docs. What are some additional options we can pass to the popup?
 // TODO: Try setting the text by using ".setText()" instead of ".setHTML()"
 
@@ -54,6 +107,25 @@
 
 
 // TODO TOGETHER: Using the Geocoder helper function, log the coordinates of Codeup and recenter the map to focus on Codeup. Comment out previous map code.
+//!USE WITH INPUT
+// geocode(`300 dolorosa, San Antonio, TX,78205 `, MAPBOX_KEY)
+//     .then(res => {
+//         map.setCenter(res)
+//
+//         new mapboxgl.Marker()
+//             .setLngLt(res)
+//             .addTo(map)
+//     })
+    
+
+
+//!REVERSE GEO CODE
+// reverse geocode method from mapbox-geocoder-utils.js
+// reverseGeocode({lng: -98.4861, lat: 29.4260}, MAPBOX_KEY).then(function(results) {
+//     // logs the address for The Alamo
+//     console.log(results);
+// });
+
 
 
 //TODO: Using the geocode method above, add a marker at Codeup to the map
