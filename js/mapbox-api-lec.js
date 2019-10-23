@@ -36,6 +36,11 @@ let codeupOptions = {
     draggable: true,
     anchor: 'bottom'
 }
+
+let zooOptions = {
+    color: 'orange',
+    anchor: 'bottom'
+}
 // let codeupPopup = new mapboxgl.Popup()
 //     .setLngLat([-98.489615, 29.426827])
 //     .setHTML("<p>Codeup Rocks!</p>")
@@ -46,29 +51,33 @@ let codeup = new mapboxgl.Marker(codeupOptions)
     .addTo(map)
 
 // codeup.setPopup(codeupPopup)
-
+let houseCords = [-98.363970, 29.594980]
 let myhouse = new mapboxgl.Marker(markerOptions)
     .setLngLat([-98.363970, 29.594980])
+    .addTo(map)
+
+let zooCords = [-98.494614, 29.425171]
+let zooMarker = new mapboxgl.Marker(zooOptions)
+    .setLngLat(zooCords)
     .addTo(map)
 
 //! Showing addresses where clicked
 map.on('click', (mark)=> {
     let lat = mark.lngLat.lat
     let lng = mark.lngLat.lng
+    console.log(mark.lngLat)
     
 
     reverseGeocode({lng, lat}, MAPBOX_KEY)
         .then(res => {
-            console.log(res)
             new mapboxgl.Popup()
                 .setLngLat([lng,lat])
                 .setHTML(`<p>${res}</p>`)
                 .addTo(map)
         })
     //! Marker CLICKS
-    console.log(`MARK: `, mark.lngLat)
     restruants.forEach(r => {
-        console.log(`R:::`, r.cords)
+        //? need to make polygon
     })
 })
 
@@ -108,3 +117,7 @@ map.on('click', (mark)=> {
 // TODO: Reverse geocode coordinates of your choice using the reverse geocode method
 
 
+//  {lng: -98.49544366956381, lat: 29.42603713917265}
+//  {lng: -98.49407073914558, lat: 29.425718256130793}
+//  {lng: -98.49526061217637, lat: 29.424894470290695}
+//  {lng: -98.4941419281271, lat: 29.425213355927326}
