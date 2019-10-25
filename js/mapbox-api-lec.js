@@ -52,13 +52,19 @@ let codeup = new mapboxgl.Marker(codeupOptions)
 
 // codeup.setPopup(codeupPopup)
 let houseCords = [-98.363970, 29.594980]
+let miCasa = new mapboxgl.Popup({offset: 25})
+    .setHTML(`<p>MI CASA!!</p>`)
 let myhouse = new mapboxgl.Marker(markerOptions)
     .setLngLat([-98.363970, 29.594980])
+    .setPopup(miCasa)
     .addTo(map)
 
 let zooCords = [-98.494614, 29.425171]
+let zooPop = new mapboxgl.Popup({offset: 25})
+    .setHTML(`<p>SA ZOO!!</p>`)
 let zooMarker = new mapboxgl.Marker(zooOptions)
     .setLngLat(zooCords)
+    .setPopup(zooPop)
     .addTo(map)
 
 //! Showing addresses where clicked
@@ -80,7 +86,7 @@ map.on('click', (mark)=> {
         //? need to make polygon
     })
 })
-
+//colin
 
 /**********************************************
  * 					Geocoder

@@ -117,4 +117,18 @@ const createPersonObject = (name, age) => {
             age,
         }
 }
-console.log(createPersonObject("amber", 32))
+
+const fizzBuzz = () => {
+    for (let i = 1; i < 100; i++) {
+        console.log(`--${i}--`)
+        if(i % 3 === 0) console.log(`FIZZ`)
+        if(i % 5 === 0) console.log(`BUZZ`)
+    }
+    return null
+}
+const stringFive = (str) => {
+    if(isString(str))
+        if(str == 5) return parseInt(5)
+   return false
+}
+
