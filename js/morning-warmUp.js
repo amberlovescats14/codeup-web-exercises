@@ -127,8 +127,42 @@ const fizzBuzz = () => {
     return null
 }
 const stringFive = (str) => {
-    if(isString(str))
-        if(str == 5) return parseInt(5)
-   return false
+    if(str.toLowerCase() === 'five') return 5
 }
 
+var shoppingCarts = [
+    {
+        apples: 8,
+        bananas: 2,
+        oranges: 4,
+        grapes: 24
+    }, {
+        apples: 3,
+        bananas: 6,
+        oranges: 8,
+        grapes: 12
+    } , {
+        apples: 0,
+        bananas: 12,
+        oranges: 0,
+        grapes: 0
+    } , {
+        apples: 4,
+        bananas: 0,
+        oranges: 12,
+        grapes: 10
+    }
+];
+
+const mostOranges = (arr) => {
+    let temp = 0
+    let index = 0
+    arr.forEach((a, i)=> {
+        if(a.oranges > temp) {
+            temp = a.oranges
+            index = i
+        }
+    })
+    return arr[index]
+}
+console.log(mostOranges(shoppingCarts))
