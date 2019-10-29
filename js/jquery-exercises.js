@@ -93,10 +93,30 @@ $('h1, p, li').hover(
     function () { $(this).css({
         background: 'white',
         color: 'black'
-    })}
+    })
+    }
 
 )
 
+//!PART 2
+
+//z click
+let part2 = $('#part2')
+part2.click(
+    function(){$(this).css('background', 'pink')}
+)
+
+//z: DOUBLE CLICK
+let allP = $('p')
+allP.dblclick(
+    function(){$(this).css('font-size', '18px')}
+)
+
+//z: hover
+allLi.hover(
+    function(){$(this).css('color', 'red')},
+    function(){$(this).css('color', 'black')}
+)
 
 
 
