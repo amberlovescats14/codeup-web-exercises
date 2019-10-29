@@ -197,7 +197,7 @@ let students = [
 const notRegistered = (arr) => {
     let final = []
     arr.forEach(a => {
-        if(a.isRegistered !== true) final.push(a)
+        if(!a.isRegistered) final.push(a)
     })
     return final
 }
