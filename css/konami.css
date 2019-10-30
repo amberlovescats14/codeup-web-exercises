@@ -1,10 +1,15 @@
+nav {
+  background: rgb(43,148,158);
+  background: radial-gradient(circle, rgba(43,148,158,1) 0%, rgba(0,13,14,1) 100%);
+}
 #main-wrapper {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   /*turn that off*/
   background: black;
+
 }
 #keys {
   width: 400px;
@@ -12,7 +17,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid red;
 }
 .neon {
   color: #FFFFFF;
@@ -21,6 +25,7 @@
   /*display: none;*/
 }
 
-/*#main-key {*/
-/*  border: 2px solid yellow*/
-/*}*/
+#announcement {
+  color: rgba(0,0,0,0.6);
+  text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+}
