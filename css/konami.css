@@ -2,6 +2,12 @@ nav {
   background: rgb(43,148,158);
   background: radial-gradient(circle, rgba(43,148,158,1) 0%, rgba(0,13,14,1) 100%);
 }
+#loading {
+  height: 90vh;
+}
+#figit {
+  height: 100%;
+}
 #main-wrapper {
   display: none;
   justify-content: center;

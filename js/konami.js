@@ -12,14 +12,25 @@ $(document).ready(function () {
     $(document).keydown(function (e) {
         e.preventDefault()
         let letter = e.key
+        let code = e.keyCode
         // changeDisplay(letter)
-        mainKey(letter)
+        mainKey(letter, code)
     })
     
-    const mainKey = (char) => {
+    const mainKey = (char, c) => {
         let uc = char.toUpperCase()
         let main = $('#main-key')
-        main.html(`<h1 class="neon">${uc}</h1>`)
+        switch(c){
+            case 37:
+            case 38:
+            case 39:
+            case 40:
+                main.html(`<h6 class="neon">${uc}</h6>`)
+                break;
+            default:
+                main.html(`<h1 class="neon">${uc}</h1>`)
+        }
+
         setTimeout(function () {
             main.html('')
         },500)
@@ -41,7 +52,13 @@ $(document).ready(function () {
                 }
             })
             if(answer === true) win()
-            else alert(`TRY AGAIN`)
+            if(strikes === 0 ) loose()
+            else {
+                userInput = []
+                alert(`TRY AGAIN`)
+                strikes--
+                $('#span').html(strikes)
+            }
             
         }
 
@@ -55,8 +72,21 @@ $(document).ready(function () {
         body.css({
             backgroundSize: 'cover'
         })
+        alert(`You have added 30 lives!`)
+        setTimeout(function () {
+            location.reload()
+        },3000)
     }
-
+    const loose = () => {
+        let imageUrl = "https://media.giphy.com/media/fiyQQLci4d1w6Njojo/giphy.gif"
+        let body = $('body')
+        body.html('')
+        body.css("background-image", "url(" + imageUrl + ")");
+        body.css({
+            backgroundSize: 'cover'
+        })
+        alert(`Sorry, You Lost!`)
+    }
 
     
     //!KONAMI TEXT
