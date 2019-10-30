@@ -42,7 +42,7 @@ header.css({
     opacity: '.9',
     left: '200px',
     height: '200px'
-}).append(`<button id="finish" style="margin-left: 20px">Submit</button>`)
+}).append(`<button id="finish" style="margin-left: 20px" class="waves-effect waves-light btn blue">Submit</button>`)
 
 
 //z: alert user using the html of page
