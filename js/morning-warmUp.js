@@ -240,8 +240,3 @@ var hamsters = [
 const sortedByHeightAscending = (arr) => {
     let sort = arr.sort((a,b)=> Number(a.heightInMM) > Number(b.heightInMM)? 1: -1)
 }
-
-
-
-
-sortedByHeightAscending(hamsters)
