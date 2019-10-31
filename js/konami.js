@@ -44,19 +44,19 @@ $(document).ready(function () {
     
     
     const checkInput = (arr) => {
-            let answer = true
+        let answer = true
         if(userInput.length === 10){
             arr.forEach((a,i)=> {
                 if(arr[i] !== konami[i]){
                     answer = false
                 }
             })
-            if(answer === true) win()
-            if(strikes === 0 ) loose()
+            if(answer === true)  win()
+            else if(strikes === 1 ) loose()
             else {
+                strikes--
                 userInput = []
                 alert(`TRY AGAIN`)
-                strikes--
                 $('#span').html(strikes)
             }
             
@@ -65,7 +65,8 @@ $(document).ready(function () {
         return null
     }
     const win = () => {
-        let imageUrl = "https://media.giphy.com/media/l4KhWPNyLHiB3TjVe/giphy.gif"
+        console.log(`WIN`)
+        let imageUrl = "https://media.giphy.com/media/l378aIbkmStxhUa1G/giphy.gif"
         let body = $('body')
         body.html('')
         body.css("background-image", "url(" + imageUrl + ")");
@@ -78,6 +79,7 @@ $(document).ready(function () {
         },3000)
     }
     const loose = () => {
+        console.log(`LOST`)
         let imageUrl = "https://media.giphy.com/media/fiyQQLci4d1w6Njojo/giphy.gif"
         let body = $('body')
         body.html('')

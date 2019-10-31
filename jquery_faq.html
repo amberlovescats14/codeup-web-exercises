@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jquery FAQ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .highlight {
+            border: 5px solid #ede509;
+                 }
+        .invisible {
+            visibility: hidden;
+        }
+        #grid-wrapper {
+            height: 100px;
+            width: 100%;
+            display: grid;
+            grid-template: 1fr, repeat(3, 1fr);
+            border: 2px solid black;
+        }
+        .div1 {
+            grid-area: 1/ 1 / -1 / span 1;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            padding: 5px;
+            
+        }
+        .div2 {
+            grid-area: 1 / 2/ -1 / span 1;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            padding: 5px;
+    
+        }
+        .div3 {
+            grid-area: 1/ 3 /-1 /span 1;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            padding: 5px;
+    
+        }
+        .imageHolder {
+            border: 2px solid white;
+            position: relative;
+            height: 100%;
+            width: 100%
+        }
+        .imageHolder > .btn1 {
+            position: absolute;
+            bottom: 0;
+            right: 0
+        }
+        .imageHolder > .btn2{
+            position: absolute;
+            bottom: 0;
+            right: 30%
+        }
+        .imageHolder > .btn3{
+            position: absolute;
+            bottom: 0;
+            left: 0
+        }
+        .imageHolder > img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+    </style>
+</head>
+<body>
+<nav>
+    <div class="nav-wrapper green">
+        <a href="#" class="brand-logo">National Parks</a>
+    </div>
+</nav>
+<div class="container">
+    <div id="grid-wrapper" class="card">
+        <div class="div div1 green darken-4">
+            <div class="imageHolder">
+            <button class="btn waves-effect waves-light green btn1">>> </button>
+                <img src="./css/img/jquery/halloween1.jpeg" class="img" alt="h1">
+            </div>
+        </div>
+        <div class="div div2 green darken-4">
+            <div class="imageHolder">
+                <button class="btn waves-effect waves-light green btn2"> << >> </button>
+                <img src="./css/img/jquery/halloween2.jpeg" class="img" alt="h1">
+            </div>
+        </div>
+        <div class="div div3 green darken-4">three</div>
+
+    </div>
+</div>
+<div class="container">
+    <div class="row ">
+        <div class="col s6 ">
+            <div class="card z-depth-2">
+                
+                <h1 >FAQ.</h1>
+                <button class="waves-effect waves-light btn green" id="toggle">Toggle Class</button>
+                <button class="yellow waves-effect waves-light btn black-text">Turn Yellow</button>
+                <dl class="invisible">
+                    <dt>Lorem</dt>
+                    <dd class="park park-1 card blue-grey darken-1 white-text">
+                        Who is the director of the National Park Service?
+                    </dd>
+                    <dt>Lorem</dt>
+                    <dd class="park park-2 card blue-grey darken-1 white-text">
+                        What government agency oversees the National Park Service?
+                    </dd>
+                    <dt>Lorem</dt>
+                    <dd class="park park-3 card blue-grey darken-1 white-text">
+                        How many employees are in the National Park Service?
+                    </dd>
+                    <dt>Lorem</dt>
+                    <dd class="park park-4 card blue-grey darken-1 white-text">
+                        How old is the National Park System?
+                    </dd>
+                    <dt>Lorem</dt>
+                    <dd class="park park-5 card blue-grey darken-1 white-text">
+                        What is the origin of the National Park Service arrowhead?
+                    </dd>
+                    <dt>Lorem</dt>
+                    <dd class="park park-6 card blue-grey darken-1 white-text">
+                        How many areas are in the National Park System?
+                    </dd>
+                    <dt>Lorem</dt>
+                    <dd class="park park-7 card blue-grey darken-1 white-text">
+                        What is the largest national park site? Smallest?
+                    </dd>
+                    <dt>Lorem</dt>
+                    <dd class="park park-8 card blue-grey darken-1 white-text">
+                        What is the National Park Service budget?
+                    </dd>
+                    <dt>Lorem</dt>
+                    <dd class="park park-9 card blue-grey darken-1 white-text">
+                        How many people visit the national parks?
+                    </dd>
+                    <dt>Lorem</dt>
+                    <dd class="park park-10 card blue-grey darken-1 white-text">
+                        What is the most-visited national park?
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="col s6 part2" style="padding: 10px">
+            <div class="card z-depth-2">
+                <div class="card green ">
+                    <h3 class="white-text">Zion National Park</h3>
+                    <ul class="collection">
+                        <li class="collection-item">In Utah</li>
+                        <li class="collection-item">Lowest Elevation 3,667'</li>
+                        <li class="collection-item">There is a subway in paark</li>
+                        <li class="collection-item">Angel's Landing is one of the most dangerous hikes in the world</li>
+                    </ul>
+                </div>
+<!--                list 2-->
+                <div class="card green">
+                    <h3 class="white-text">Joshua Tree National Park</h3>
+                    <ul class="collection">
+                        <li class="collection-item">In California</li>
+                        <li class="collection-item">790,636 acres</li>
+                        <li class="collection-item">Where the high Mojave Desert meets the low Colorado Desert</li>
+                        <li class="collection-item">Quail Mountain is the highest mountain in the park</li>
+                    </ul>
+                </div>
+<!--                list 3-->
+                <div class="card z-depth-2">
+                    <div class="card green ">
+                        <h3 class="white-text">Shenandoah National Park</h3>
+                        <ul class="collection">
+                            <li class="collection-item">In Virginia</li>
+                            <li class="collection-item">On July 3, 1936 President Franklin Delano Roosevelt dedicated
+                                its’ opening to the public</li>
+                            <li class="collection-item">Comprised primarily of the Blue Ridge Mountains</li>
+                            <li class="collection-item">79,579 acres </li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+</div>
+<hr>
+
+<script src="./js/jquery-2.2.4.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+$(document).ready(function () {
+    let toggleButton = $('#toggle')
+    toggleButton.click(function () {
+        $('dl').toggleClass('invisible')
+    })
+    $('dl dd').each(function () {
+        $(this).click(function () {
+            $(this).toggleClass('highlight')
+        })
+    })
+    
+    //!SECOND HALF
+    let yellowBtn = $('.yellow')
+    yellowBtn.click(function () {
+        $('.part2 ul').each(function () {
+            $(this).children().last().css('background', 'yellow')
+        })
+    })
+    
+    let h3 = $('h3')
+    h3.click(function () {
+        $(this).parent().children().children().css('font-weight', 'bold')
+    })
+    
+    let li = $('li')
+    li.click(function () {
+        $(this).parent().children().first().css('color', 'blue')
+    })
+    
+    
+    
+    // end
+})
+
+</script>
+</body>
+</html>
