@@ -240,3 +240,27 @@ var hamsters = [
 const sortedByHeightAscending = (arr) => {
     let sort = arr.sort((a,b)=> Number(a.heightInMM) > Number(b.heightInMM)? 1: -1)
 }
+
+const numbersToStrings = (num) => {
+    if(isNumeric(num)){
+        switch (num) {
+            case 1: return 'one';
+            case 2: return 'two';
+            case 3: return 'three';
+            case 4: return 'four';
+            case 5: return 'five';
+            case 6: return 'six';
+            case 7: return 'seven';
+            case 8: return 'eight';
+            case 9: return 'nine';
+            case 10: return 'ten';
+            default: return 'Not between 1-10'
+        }
+    }
+}
+
+const anotherWay = (num) => {
+    let nums = [0,'one', 'two','three', 'four', 'five', 'six','seven', 'eight', 'nine', 'ten']
+    if(isNumeric(num)) if(num > 0 && num < 11) return nums[num]
+    else return `Number is not between 1-10`
+}
