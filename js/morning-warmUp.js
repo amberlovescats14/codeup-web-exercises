@@ -264,3 +264,8 @@ const anotherWay = (num) => {
     if(isNumeric(num)) if(num > 0 && num < 11) return nums[num]
     else return `Number is not between 1-10`
 }
+
+const yourWelcome = (obj) => {
+    if(obj.gratitude.toLowerCase() === 'Thank you') return `You're Welcome`
+    else return false
+}

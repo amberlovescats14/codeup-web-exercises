@@ -1,0 +1,10 @@
+tr {
+  border: 2px solid;
+  display: flex;
+}
+td, th {
+  text-align: center;
+  width: 100px;
+  flex: 1
+
+}
