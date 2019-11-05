@@ -1,0 +1,42 @@
+[
+    {
+        "title": "My First Blog Post",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "categories": [
+            "greek"
+        ],
+        "date": "January 25, 2015",
+        "img": "https://images.unsplash.com/photo-1562887085-cb16e9116582?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1600&q=60"
+    }, {
+        "title": "The Second Post",
+        "content": "Cupcake ipsum dolor sit amet gummies. Cake chocolate sweet ice cream oat cake biscuit bear claw dessert. Jujubes marzipan toffee apple pie pastry dragée jujubes marshmallow. Dragée chocolate gingerbread liquorice chocolate bar jujubes. Sweet chocolate bar jelly-o chocolate cake candy carrot cake cotton candy macaroon marzipan. Sweet roll biscuit sweet gummies topping sesame snaps tootsie roll sugar plum pie. Sweet muffin croissant chocolate cake chupa chups. Donut croissant gummies donut powder ice cream. Chupa chups halvah apple pie topping jelly beans donut candy canes donut. Bonbon cake gummi bears cheesecake tart topping powder liquorice gummi bears.",
+        "categories": [
+            "family",
+            "candy",
+            "sweets",
+            "sugar"
+        ],
+        "date": "February 14, 2015",
+        "img": "https://images.unsplash.com/photo-1572925151789-c13420b54514?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1600&q=60"
+    },
+    {
+        "title": "Amber Loves Coffee",
+        "content": "Saucer, and, viennese cup, pumpkin spice, plunger pot frappuccino, so cream plunger pot cream macchiato. Café au lait, et, frappuccino, organic body, that aromatic bar cortado irish. Irish redeye affogato instant fair trade macchiato, bar saucer barista dripper aftertaste.",
+        "categories": [
+            "coffee",
+            "happy",
+            "dutch"
+        ],
+        "date": "March 8, 2019",
+        "img": "https://images.unsplash.com/photo-1572380473932-d92a2d8f0e27?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+    }, {
+    "title": "Sky Line",
+    "content": "Tumblr adaptogen unicorn, austin kickstarter letterpress lyft coloring book ennui heirloom typewriter affogato pinterest keytar. Pinterest synth disrupt bespoke meggings schlitz pop-up. Offal mlkshk cred bespoke letterpress 90's echo park",
+    "categories": [
+        "travel",
+        "summer"
+    ],
+    "date": "May 5, 1987",
+    "img": "https://images.unsplash.com/photo-1562695401-9ca1dc1b00d6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1600&q=60"
+}
+]

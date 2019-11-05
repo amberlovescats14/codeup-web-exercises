@@ -1,7 +1,7 @@
 $(document).ready(function () {
     
     let tableBody = $('#insertProducts')
-    $('#wrapper').append(`<button id="refresh">Refresh</button>`)
+    $('#wrapper').append(`<button id="refresh" class="btn btn-outline-info mx-3">Refresh</button>`)
     const makeRequest = () => {
         let inventoryURL = './data/inventory.json'
         let request = $.get(inventoryURL)
