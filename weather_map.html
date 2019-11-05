@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+    <!--    custom css-->
+    <link rel="stylesheet" href="./css/weather_map.css">
+    <title>Weather Map</title>
+</head>
+<body>
+<nav class="nav-extended  indigo darken-4">
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo center">AMBER_JONES</a>
+
+    </div>
+    <div class="nav-content">
+        <form>
+            <div class="input-field">
+                <input id="search" type="search" class="center-align">
+                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                <i class="material-icons">close</i>
+            </div>
+        </form>
+    </div>
+</nav>
+<div id="sky">
+    <div id="sky-card-wrapper"></div>
+</div>
+
+
+
+
+
+<script src="./js/jquery-2.2.4.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="./js/keys.js"></script>
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+<script src="./js/mapbox-geocoder-utils.js"></script>
+<script src="js/dark_sky_wm.js"></script>
+</body>
+</html>
