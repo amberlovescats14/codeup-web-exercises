@@ -269,3 +269,9 @@ const yourWelcome = (obj) => {
     if(obj.gratitude.toLowerCase() === 'Thank you') return `You're Welcome`
     else return false
 }
+
+const randomBool = () => {
+    if(Math.random() > .5) return true
+    else return false
+}
+console.log(randomBool())

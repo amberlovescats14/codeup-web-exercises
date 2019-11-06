@@ -14,21 +14,47 @@
 <nav class="nav-extended  indigo darken-4">
     <div class="nav-wrapper">
         <a href="#" class="brand-logo center">AMBER_JONES</a>
-
+       
     </div>
     <div class="nav-content">
         <form>
             <div class="input-field">
-                <input id="search" type="search" class="center-align">
-                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                <input id="city-search" type="search" class="center-align">
+                <label class="label-icon" for="city-search"><i class="material-icons" id="searchButton">search</i></label>
                 <i class="material-icons">close</i>
             </div>
         </form>
     </div>
 </nav>
+<div class="row" id="main">
+    <div class="col s12 m6" id="afterLoading">
 <div id="sky">
-    <div id="sky-card-wrapper"></div>
+    <div id="sky-card-wrapper">
+        <div id="loading">
+            <img src="https://icon-library.net/images/custom-loading-icon/custom-loading-icon-9.jpg" alt="loading"
+                 id="loading-image">
+        </div>
+        <div id="overlay"></div>
+        <div id="0"></div>
+        <div id="1"></div>
+        <div id="2"></div>
+    </div>
 </div>
+    
+     
+    </div>
+       <div class="col s12 m6" id="beforeLoading">
+       </div>
+    <div class="col s12 m6" id="map">
+    
+    </div>
+
+</div>
+
+
+
+
+
 
 
 
@@ -39,6 +65,7 @@
 <script src="./js/keys.js"></script>
 <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
 <script src="./js/mapbox-geocoder-utils.js"></script>
-<script src="js/dark_sky_wm.js"></script>
+<script src="js/weather_map_dark_sky.js"></script>
+<script src="./js/weather_map_mapbox.js"></script>
 </body>
 </html>
