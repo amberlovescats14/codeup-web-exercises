@@ -25,35 +25,17 @@
           let color = dayPrefix === 'Today'? '#fbddd5' : 'white'
             let display =
                 `
-      <div class="card indigo darken-4" id="card-${i}">
-      <div class="card-action white-text">
-                <h5 class="center" style="color: ${color}"><i>${day}</i></h5>
-
-      </div>
-        <div class="card-content white-text one" >
-<!--          row-->
-          <div class="row" style="height: 50%">
-          <div class="col s12">
-          ${item.summary}
-           </div>
-    
-<!--        end row-->
-        <div class="card-action white-text">
-        
-          <div class="row">
-          <div class="col s12">
-          High: ${Math.round(item.temperatureHigh)}
-        </div>
-         <div class="col s12">
-          Low: ${Math.round(item.temperatureLow)}
-        </div>
-
-        </div>
-<!--        end card action-->
-        </div>
-        </div>
-      </div>
-    </div>
+      <div class="card indigo darken-4 white-text all-cards" id="card-${i}">
+        <h5 class="center" style="color:${color}"><i>${day}</i></h5>
+        <img src=${chooseIcon(item.icon)} alt="icon"
+        class="center" id="icons">
+            <div class="card-content center">
+                ${item.summary}
+            </div>
+                <div class="card-action">
+                    High: ${Math.round(item.temperatureHigh)} <br>
+                    Low: ${Math.round(item.temperatureLow)}
+                </div>
   </div>`
             let wrapper = $(`#${i}`)
             wrapper.html(display)
@@ -75,6 +57,17 @@
             case 2:    
                 return split[0];
             default: return ''    
+        }
+    }
+    
+    const chooseIcon = (type) => {
+        switch (type) {
+            case 'rain': return `./amcharts_weather_icons_1.0.0/animated/rainy-1.svg`;
+            case 'fog':
+            case "partly-cloudy-day":
+                return `./amcharts_weather_icons_1.0.0/animated/cloudy.svg`;
+            case 'clear-day': return `./amcharts_weather_icons_1.0.0/animated/day.svg`
+            default: return ''
         }
     }
     getDarkSky(sanAntonio)

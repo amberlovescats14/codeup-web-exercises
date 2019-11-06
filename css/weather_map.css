@@ -6,79 +6,85 @@
 #main {
   width: 100vw;
   height: 400px;
-  border: 2px solid purple;
 }
 #loading-image {
   width: 100%;
-  height: 100%;
+  height: 400px;
   border-radius: 12px;
   -webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
   -moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
   box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
 }
-#sky {
-  height: 400px;
-  width: 100%;
-  overflow: scroll;
-  background-image: url("./img/weather_map/sky.jpeg");
-  background-size: cover;
-  background-position: center;
-  position: relative;
 
-}
 #sky-card-wrapper {
-  height: 100%;
+  height: 400px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border: 2px solid yellow;
 }
-#overlay {
- position: absolute;
-  width: 100%; /* Full width (cover the whole page) */
-  height: 100%; /* Full height (cover the whole page) */
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #8bbafe;
-  opacity: .5%;
-  z-index: 2;
-  cursor: pointer;
+
+/*#overlay {*/
+/* position: absolute;*/
+/*  width: 100%; !* Full width (cover the whole page) *!*/
+/*  height: 100%; !* Full height (cover the whole page) *!*/
+/*  top: 0;*/
+/*  left: 0;*/
+/*  right: 0;*/
+/*  bottom: 0;*/
+/*  background-color: #8bbafe;*/
+/*  opacity: .5%;*/
+/*  z-index: 2;*/
+/*  cursor: pointer;*/
+/*}*/
+.card-box {
+  border: 2px solid yellow;
+  width: 30%;
+  height: 80%;
+  display: flex;
 }
- #0 {
-  /*height: 400px !important;*/
-  /*width: 200px !important;*/
-  flex: 1;
-  z-index: 13 !important;
-  border: 2px solid greenyellow;
-}
-.row-cards {
-  height: 400px !important;
-  width: 100px;
-  flex: 1;
-  z-index: 13 !important;
-  border: 2px solid greenyellow;
-}
+
 #map {
   height: 100%;
 }
 #beforeLoading {
   background-image: url("https://icon-library.net/images/custom-loading-icon/custom-loading-icon-9.jpg");
-  background-size: contain;
-  width: 100%;
+  /*background-size: cover;*/
+  /*background-position: center;*/
+
+}
+#afterLoading {
+  background-image: url("./img/weather_map/sky.jpeg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
   height: 100%;
+}
+#icons {
+  margin: auto;
+  border: 2px solid red
+}
+.all-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
   #sky-card-wrapper {
-    height: 100%;
+    height: 800px;
     box-sizing: border-box;
     padding: 0 10%;
     justify-content: space-evenly;
     align-items: center;
   }
-  #main, #sky {
+  #main{
+    height: 800px;
+  }
+  #loading-image {
     height: 800px;
   }
 }
