@@ -10,7 +10,16 @@
 }
 #sky-card-wrapper {
   width: 100vw;
+  height: 100%;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid red;
+}
+#1, #2, #3 {
+  height: 400px !important;
+  flex: 1;
+  margin-bottom: 0;
 }
 
 @media screen and (min-width: 768px) {

@@ -19,16 +19,33 @@ $(document).ready(function () {
           let dayPrefix = prefixDay(i, item.time)
             let display =
                 `  <div class="row">
-    <div class="col s12">
-      <div class="card blue-grey darken-1">
+    <div class="col s12" id=${i} >
+      <div class="card indigo darken-4">
         <div class="card-content white-text">
-          <span class="card-title">${dayPrefix} ${day}</span>
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
+          <h6>${dayPrefix} <i>${day}</i></h6>
+<!--          row-->
+          <div class="row">
+          <div class="col s12">
+          High: ${Math.round(item.temperatureHigh)}
         </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-          <a href="#">This is a link</a>
+         <div class="col s12">
+          Low: ${Math.round(item.temperatureHigh)}
+        </div>
+        </div>
+        </div>
+<!--        end row-->
+        <div class="card-action white-text">
+        
+          <div class="row">
+          <div class="col s12">
+          High: ${Math.round(item.temperatureHigh)}
+        </div>
+         <div class="col s12">
+          Low: ${Math.round(item.temperatureLow)}
+        </div>
+        </div>
+<!--        end card action-->
+        </div>
         </div>
       </div>
     </div>
