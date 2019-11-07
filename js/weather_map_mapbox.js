@@ -2,7 +2,7 @@
     mapboxgl.accessToken = MAPBOX_KEY;
     let map = new mapboxgl.Map({
         container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v9',
+        style: 'mapbox://styles/amberlovescats14/ck2nvmojv05z31cnz0pq3s9h4',
         zoom: 10,
         center: [-98.4916, 29.4252]
     });

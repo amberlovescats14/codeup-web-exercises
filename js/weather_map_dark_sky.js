@@ -26,10 +26,10 @@
             let display =
                 `
       <div class="card indigo darken-4 white-text all-cards" id="card-${i}">
-        <h5 class="center" style="color:${color}"><i>${day}</i></h5>
+        <h5 class="center" style="color:${color}; height: 5vh"><i>${day}</i></h5>
         <img src=${chooseIcon(item.icon)} alt="icon"
         class="center" id="icons">
-            <div class="card-content center">
+            <div class="card-content center" style="height: 10vh">
                 ${item.summary}
             </div>
                 <div class="card-action">

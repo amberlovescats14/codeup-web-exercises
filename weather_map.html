@@ -27,10 +27,14 @@
         </form>
     </div>
 </nav>
+<div id="banner">
+    <h6 id="banner-h6"><b>Weather-Map</b></h6>
+<h4 id="title">Map Box & Dark Sky API</h4>
+</div>
 <div class="row" id="main">
 <!--    after loading-->
-    <div class="col s12 m6" id="afterLoading">
-<!--                <div id="overlay"></div>-->
+    <div class="col s12" id="afterLoading">
+                <div id="overlay"></div>
             <div id="sky-card-wrapper">
                 <div id="0" class="card-box"></div>
                 <div id="1" class="card-box"></div>
@@ -38,12 +42,14 @@
         </div>
     </div>
 <!--    before loading-->
-    <div class="col s12 m6" id="beforeLoading">
+    <div class="col s12 " id="beforeLoading">
         <img src="https://icon-library.net/images/custom-loading-icon/custom-loading-icon-9.jpg" alt="loading"
              id="loading-image">
     </div>
 <!--    right-->
-    <div class="col s12 m6" id="map"></div>
+    <div class="col s12" id="map-container">
+        <div id="map"></div>
+    </div>
 
 </div>
 
