@@ -274,4 +274,7 @@ const randomBool = () => {
     if(Math.random() > .5) return true
     else return false
 }
-console.log(randomBool())
+
+const getEvenNumber = (arr) => (
+    arr.filter(a => a % 2 === 0)
+)

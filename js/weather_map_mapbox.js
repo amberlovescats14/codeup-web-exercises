@@ -11,7 +11,7 @@
     //!Make Marker
 
     let sanAntonioOptions = {
-        color: '#1A227E',
+        color: '#AF7A7B',
         anchor: 'bottom',
         draggable: true
     
@@ -61,6 +61,7 @@
                 getDarkSky(res.reverse())
             })
     }
+    
     const changeZoom = (centerCords) => {
         map.flyTo({
             center: centerCords,

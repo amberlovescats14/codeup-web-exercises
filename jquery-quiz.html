@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <title>Example jQuery Page</title>
+</head>
+<body>
+<h1 id="codeup">Hello Codeup</h1>
+
+<script src="./js/jquery-2.2.4.js"></script>
+<script>
+    "use strict";
+    
+    $('#clickme').click(function () {
+        $('#user_display').html($('#user_input').val())
+    })
+</script>
+</body>
+</html>
+
+<!--// When using id selectors in jQuery, you will get back all elements that have that id.-->

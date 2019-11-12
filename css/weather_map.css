@@ -5,8 +5,10 @@
 }
 :root {
   --pink-one: #C8B0B9;
+  --pink-dark: #AF7A7B;
   --brown: #CAAE9D;
-  --blue: #1A227E
+  --blue: #1A227E;
+  --white: #F9F5F1
 }
 #banner {
   width: 100%;
