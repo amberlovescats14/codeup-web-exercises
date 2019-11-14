@@ -278,3 +278,13 @@ const randomBool = () => {
 const getEvenNumber = (arr) => (
     arr.filter(a => a % 2 === 0)
 )
+//! JUST A PROMISE NO FETCH
+const evenPromise = num => {
+    let promise = new Promise((resolve, reject) => {
+        if(num % 2 === 0) resolve('Even')
+        else reject('Not Even')
+    })
+    promise.then(()=> console.log(`Resolve`))
+    promise.catch(()=> console.log(`Reject`))
+}
+console.log(evenPromise(2))

@@ -51,4 +51,7 @@ const longestEmail = arr => (
     },'').length
 )
 
-
+const usersNames = arr => (
+    arr.reduce((a,{name})=> a += `${name.toUpperCase()}, `,'')
+)
+console.log(usersNames(users))
