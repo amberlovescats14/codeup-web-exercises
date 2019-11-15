@@ -287,4 +287,14 @@ const evenPromise = num => {
     promise.then(()=> console.log(`Resolve`))
     promise.catch(()=> console.log(`Reject`))
 }
-console.log(evenPromise(2))
+
+
+//! USING THE RESULT VALUE
+const resolveHello = () => {
+    let promise = new Promise((resolve, reject) => resolve(`Hello`))
+    promise.then((result)=> {
+        $('#promise').append(`<h1>${result}</h1>`)
+    })
+    promise.catch(()=> console.log(`SERVER ERROR`))
+}
+resolveHello()
