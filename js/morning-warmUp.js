@@ -297,4 +297,5 @@ const resolveHello = () => {
     })
     promise.catch(()=> console.log(`SERVER ERROR`))
 }
-resolveHello()
+
+const getPiToTheSixthDecimal = () => Number(Math.PI.toFixed(6))
